@@ -66,7 +66,7 @@ $CATALINA_HOME/bin/startup.sh
 
 启动成功后，通过访问 **http://localhost:8080 /**，包含 Tomcat 的默认的 web 应用程序将是可用的。如果一切进展顺利，那么应该显示如下结果： 
 
-![environment1](../images/envirnoment1.jpg)
+![environment1](images/envirnoment1.jpg)
 
 关于配置和运行 Tomcat 的更多信息可以在这里的文档中找到，也可以在 Tomcat 网站中找到：http://tomcat.apache.org
 
