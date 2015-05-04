@@ -1,5 +1,4 @@
  - Basic JSP Tutorial
-   - [JSP - 主页](index.md)
    - [JSP - 概述](jsp_overview.md)
    - [JSP - 环境配置](jsp_environment_setup.md)
    - [JSP - 体系结构](jsp_architecture.md)
