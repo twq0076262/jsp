@@ -39,7 +39,7 @@ out.println("Your IP address is " + request.getRemoteAddr());
 
 让我们把上面的代码写入 JSP 文件中的 hello.jsp 中，并把这个文件放在 **C:\ apache-tomcat-7.0.2 \ webapps \ROOT** 中，并试图通过 http://localhost:8080 / hello.jsp 浏览它。这将产生以下结果：
 
-![syntax1](../images/syntax1.jpg)
+![syntax1](images/syntax1.jpg)
 
 ## JSP 声明:
 JSP 声明声明了一个或多个变量或方法，你可以在 JSP 文件中的 Java 代码中使用。当你在 JSP 文件中使用变量或方法之前，你必须声明。
@@ -397,12 +397,12 @@ JSP 支持所有 Java 支持的逻辑和算术运算符。下表列出了所有�
 
 JSP 表达式语言定义了以下文字：
 
-- **布尔数：** 真和假
+- **Boolean：** true and false
 
-- **整数：** 与 Java 相同
+- **Integer：** 与 Java 相同
 
-- **浮点数：** 与 Java 相同
+- **Floating point：** 与 Java 相同
 
-- **字符串：** 带有单引号和双引号；’’转义为\’’，’转义为\’，\转义为\\。
+- **String：** 带有单引号和双引号；’’转义为\’’，’转义为\’，\转义为\\。
 
-- **空：** 空
+- **Null：** null

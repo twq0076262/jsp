@@ -37,50 +37,48 @@ JSP 会给你一个选项来指定每一个 JSP 的错误页面。不管何时�
 
 下面是 main.jsp 中一个特定错误页面的例子。为了创建一个错误页面，使用 <%@ page errorPage=”xxx”%> 指令。
 
-<pre class="prettyprint notranslate">
-&lt;%@ page errorPage="ShowError.jsp" %&gt;
+```
+<%@ page errorPage="ShowError.jsp" %>
 
-&lt;html&gt;
-&lt;head&gt;
-   &lt;title&gt;Error Handling Example&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;%
+<html>
+<head>
+   <title>Error Handling Example</title>
+</head>
+<body>
+<%
    // Throw an exception to invoke the error page
    int x = 1;
    if (x == 1)
    {
       throw new RuntimeException("Error condition!!!");
    }
-%&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+%>
+</body>
+</html>
+```
 
 现在你需要写一个错误处理的 JSP ShowError.jsp，下面给出了代码。注意，错误处理页面包括 <%@ page isErrorPage=”true”%> 指令。这个指令使 JSP 编译器生成异常实例变量。
 
-<pre class="prettyprint notranslate tryit">
-&lt;%@ page isErrorPage="true" %&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Show Error Page&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h1&gt;Opps...&lt;/h1&gt;
-&lt;p&gt;Sorry, an error occurred.&lt;/p&gt;
-&lt;p&gt;Here is the exception stack trace: &lt;/p&gt;
-&lt;pre&gt;
-&lt;% exception.printStackTrace(response.getWriter()); %&gt;
-&lt;/pre&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+```
+<%@ page isErrorPage="true" %>
+<html>
+<head>
+<title>Show Error Page</title>
+</head>
+<body>
+<h1>Opps...</h1>
+<p>Sorry, an error occurred.</p>
+<p>Here is the exception stack trace: </p>
+<pre>
+<% exception.printStackTrace(response.getWriter()); %>
 </pre>
-
+</body>
+</html>
+```
 
 现在试图访问 main.jsp，它将会生成如下结果：
 
-<pre class="result notranslate">
+```
 java.lang.RuntimeException: Error condition!!!
 ......
 
@@ -88,49 +86,47 @@ Opps...
 Sorry, an error occurred.
 
 Here is the exception stack trace:
-</pre>
-
+```
 
 ## 在错误页面使用 JSTL 标签： 
 
 你可以使用 JSTL 标签来编写一个错误页面 ShowError.jsp。这个页面和上面的例子中几乎使用的是相同的逻辑，但是它有更好的结构，并且他提供了更多的信息：
 
-<pre class="prettyprint notranslate tryit">
-&lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt;
-&lt;%@page isErrorPage="true" %&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Show Error Page&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h1&gt;Opps...&lt;/h1&gt;
-&lt;table width="100%" border="1"&gt;
-&lt;tr valign="top"&gt;
-&lt;td width="40%"&gt;&lt;b&gt;Error:&lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;${pageContext.exception}&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr valign="top"&gt;
-&lt;td&gt;&lt;b&gt;URI:&lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;${pageContext.errorData.requestURI}&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr valign="top"&gt;
-&lt;td&gt;&lt;b&gt;Status code:&lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;${pageContext.errorData.statusCode}&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr valign="top"&gt;
-&lt;td&gt;&lt;b&gt;Stack trace:&lt;/b&gt;&lt;/td&gt;
-&lt;td&gt;
-&lt;c:forEach var="trace" 
-         items="${pageContext.exception.stackTrace}"&gt;
-&lt;p&gt;${trace}&lt;/p&gt;
-&lt;/c:forEach&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+```
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isErrorPage="true" %>
+<html>
+<head>
+<title>Show Error Page</title>
+</head>
+<body>
+<h1>Opps...</h1>
+<table width="100%" border="1">
+<tr valign="top">
+<td width="40%"><b>Error:</b></td>
+<td>${pageContext.exception}</td>
+</tr>
+<tr valign="top">
+<td><b>URI:</b></td>
+<td>${pageContext.errorData.requestURI}</td>
+</tr>
+<tr valign="top">
+<td><b>Status code:</b></td>
+<td>${pageContext.errorData.statusCode}</td>
+</tr>
+<tr valign="top">
+<td><b>Stack trace:</b></td>
+<td>
+<c:forEach var="trace" 
+         items="${pageContext.exception.stackTrace}">
+<p>${trace}</p>
+</c:forEach>
+</td>
+</tr>
+</table>
+</body>
+</html>
+```
 
 现在试图访问 main.jsp，它将会生成如下结果：
 
@@ -169,13 +165,13 @@ Here is the exception stack trace:
 
 下面显示的是如何使用 try...catch 块的一个简单的例子。让我们将下面发的代码放到 main.jsp 中：
 
-<pre class="prettyprint notranslate tryit">
-&lt;html&gt;
-&lt;head&gt;
-   &lt;title&gt;Try...Catch Example&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;%
+```
+<html>
+<head>
+   <title>Try...Catch Example</title>
+</head>
+<body>
+<%
    try{
       int i = 1;
       i = i / 0;
@@ -184,14 +180,13 @@ Here is the exception stack trace:
    catch (Exception e){
       out.println("An exception occurred: " + e.getMessage());
    }
-%&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+%>
+</body>
+</html>
+```
 
 现在试图访问 main.jsp，它将会生成如下结果：
 
-<pre class="result notranslate">
+```
 An exception occurred: / by zero 
-</pre>
+```

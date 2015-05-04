@@ -7,7 +7,7 @@ JSP 容器适用于 Web 服务器，来提供 JSP 运行时环境和其他服务
 以下图表显示了 JSP 容器的位置以及在一个 Web 应用程序中的 JSP 文件。
 
 
-![arch1](../images/arch1.jpg)
+![arch1](images/arch1.jpg)
 
 ## JSP 处理： 
 
@@ -29,7 +29,7 @@ JSP 容器适用于 Web 服务器，来提供 JSP 运行时环境和其他服务
 
 上述所有步骤如下图所示：
 
-![architecture2](../images/arch2.jpg)
+![architecture2](images/arch2.jpg)
 
 通常，JSP 引擎检查 JSP 文件的 servlet 是否已存在，JSP 的修改日期是否比 servlet 的过时。如果 JSP 的修改日期比其生成的 servlet 的修改日期过时，那么 JSP 容器假设 JSP 修改日期没有改变，且生成的 servlet 的修改日期仍然与 JSP 的内容相匹配。与其他脚本语言(比如 PHP)相比，这个过程更有效率，因此更加快速。
 

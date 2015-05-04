@@ -41,33 +41,32 @@ java.util.Locale request.getLocale()
 
 这个例子展示了你如何为 JSP 中的一个请求显示一个语言和与其相关的国家：
 
-<pre class="prettyprint notranslate">
-&lt;%@ page import="java.io.*,java.util.Locale" %&gt;
-&lt;%@ page import="javax.servlet.*,javax.servlet.http.* "%&gt;
-&lt;%
+```
+<%@ page import="java.io.*,java.util.Locale" %>
+<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
+<%
    //Get the client's Locale
    Locale locale = request.getLocale();
    String language = locale.getLanguage();
    String country = locale.getCountry();
-%&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Detecting Locale&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;center&gt;
-&lt;h1&gt;Detecting Locale&lt;/h1&gt;
-&lt;/center&gt;
-&lt;p align="center"&gt;
-&lt;% 
-   out.println("Language : " + language  + "&lt;br /&gt;");
-   out.println("Country  : " + country   + "&lt;br /&gt;");
-%&gt;
-&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+%>
+<html>
+<head>
+<title>Detecting Locale</title>
+</head>
+<body>
+<center>
+<h1>Detecting Locale</h1>
+</center>
+<p align="center">
+<% 
+   out.println("Language : " + language  + "<br />");
+   out.println("Country  : " + country   + "<br />");
+%>
+</p>
+</body>
+</html>
+```
 
 ## 语言设置：  
 
@@ -76,45 +75,43 @@ java.util.Locale request.getLocale()
 第二点是使用 HTML 实体显示所有的特殊字符，例如，"&amp;#241;" 代表"&#241;"，"&amp;#161;"代表 “&#161;”，如下：
 
 
-<pre class="prettyprint notranslate">
-&lt;%@ page import="java.io.*,java.util.Locale" %&gt;
-&lt;%@ page import="javax.servlet.*,javax.servlet.http.* "%&gt;
-&lt;%
+```
+<%@ page import="java.io.*,java.util.Locale" %>
+<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
+<%
     // Set response content type
     response.setContentType("text/html");
     // Set spanish language code.
     response.setHeader("Content-Language", "es");
-    String title = "En Espa&ntilde;ol";
+    String title = "En Español";
 
-%&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;&lt;%  out.print(title); %&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;center&gt;
-&lt;h1&gt;&lt;%  out.print(title); %&gt;&lt;/h1&gt;
-&lt;/center&gt;
-&lt;div align="center"&gt;
-&lt;p&gt;En Espa&ntilde;ol&lt;/p&gt;
-&lt;p&gt;&iexcl;Hola Mundo!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
-
+%>
+<html>
+<head>
+<title><%  out.print(title); %></title>
+</head>
+<body>
+<center>
+<h1><%  out.print(title); %></h1>
+</center>
+<div align="center">
+<p>En Español</p>
+<p>¡Hola Mundo!</p>
+</div>
+</body>
+</html>
+```
 
 ## 局部区域的特定的日期： 
 
 你可以使用 java.text.DateFormat 类和它的静态 getDateTimeinstance() 方法来为局部区域格式化日期和时间特性。下面的例子显示了对于一个给定的局部区域，如何格式化日期特性：
 
-<pre class="prettyprint notranslate">
-&lt;%@ page import="java.io.*,java.util.Locale" %&gt;
-&lt;%@ page import="javax.servlet.*,javax.servlet.http.* "%&gt;
-&lt;%@ page import="java.text.DateFormat,java.util.Date" %&gt;
+```
+<%@ page import="java.io.*,java.util.Locale" %>
+<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
+<%@ page import="java.text.DateFormat,java.util.Date" %>
 
-&lt;%
+<%
     String title = "Locale Specific Dates";
     //Get the client's Locale
     Locale locale = request.getLocale( );
@@ -122,87 +119,84 @@ java.util.Locale request.getLocale()
                                   DateFormat.FULL, 
                                   DateFormat.SHORT, 
                                   locale).format(new Date( ));
-%&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;&lt;% out.print(title); %&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;center&gt;
-&lt;h1&gt;&lt;% out.print(title); %&gt;&lt;/h1&gt;
-&lt;/center&gt;
-&lt;div align="center"&gt;
-&lt;p&gt;Local Date: &lt;%  out.print(date); %&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+%>
+<html>
+<head>
+<title><% out.print(title); %></title>
+</head>
+<body>
+<center>
+<h1><% out.print(title); %></h1>
+</center>
+<div align="center">
+<p>Local Date: <%  out.print(date); %></p>
+</div>
+</body>
+</html>
+```
 
 ## 局部区域特定的货币 
 
 在一个局部区域特定的货币，你可以使用 java.txt.NumberFormat 类和它的静态方法 getCurrencyinstance() 来格式化一个数量值，例如一个长型或双精度类型。下面的例子显示了对于一个给定的局部区域，如何格式化货币特性：
 
 
-<pre class="prettyprint notranslate">
-&lt;%@ page import="java.io.*,java.util.Locale" %&gt;
-&lt;%@ page import="javax.servlet.*,javax.servlet.http.* "%&gt;
-&lt;%@ page import="java.text.NumberFormat,java.util.Date" %&gt;
+```
+<%@ page import="java.io.*,java.util.Locale" %>
+<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
+<%@ page import="java.text.NumberFormat,java.util.Date" %>
 
-&lt;%
+<%
     String title = "Locale Specific Currency";
     //Get the client's Locale
     Locale locale = request.getLocale( );
     NumberFormat nft = NumberFormat.getCurrencyInstance(locale);
     String formattedCurr = nft.format(1000000);
-%&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;&lt;% out.print(title); %&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;center&gt;
-&lt;h1&gt;&lt;% out.print(title); %&gt;&lt;/h1&gt;
-&lt;/center&gt;
-&lt;div align="center"&gt;
-&lt;p&gt;Formatted Currency: &lt;%  out.print(formattedCurr); %&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+%>
+<html>
+<head>
+<title><% out.print(title); %></title>
+</head>
+<body>
+<center>
+<h1><% out.print(title); %></h1>
+</center>
+<div align="center">
+<p>Formatted Currency: <%  out.print(formattedCurr); %></p>
+</div>
+</body>
+</html>
+```
 
 ## 局部区域特定的百分比  
 
 你可以使用 java.txt.NumberFormat 类和它的静态方法 getPercentInstance() 来获取局部区域特定的百分比。下面的例子显示了对于一个给定的局部区域，如何格式化百分比特性：
 
-<pre class="prettyprint notranslate">
-&lt;%@ page import="java.io.*,java.util.Locale" %&gt;
-&lt;%@ page import="javax.servlet.*,javax.servlet.http.* "%&gt;
-&lt;%@ page import="java.text.NumberFormat,java.util.Date" %&gt;
+```
+<%@ page import="java.io.*,java.util.Locale" %>
+<%@ page import="javax.servlet.*,javax.servlet.http.* "%>
+<%@ page import="java.text.NumberFormat,java.util.Date" %>
 
-&lt;%
+<%
     String title = "Locale Specific Percentage";
     //Get the client's Locale
     Locale locale = request.getLocale( );
     NumberFormat nft = NumberFormat.getPercentInstance(locale);
     String formattedPerc = nft.format(0.51);
-%&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;&lt;% out.print(title); %&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;center&gt;
-&lt;h1&gt;&lt;% out.print(title); %&gt;&lt;/h1&gt;
-&lt;/center&gt;
-&lt;div align="center"&gt;
-&lt;p&gt;Formatted Percentage: &lt;%  out.print(formattedPerc); %&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+%>
+<html>
+<head>
+<title><% out.print(title); %></title>
+</head>
+<body>
+<center>
+<h1><% out.print(title); %></h1>
+</center>
+<div align="center">
+<p>Formatted Percentage: <%  out.print(formattedPerc); %></p>
+</div>
+</body>
+</html>
+```
 
 
 
