@@ -106,7 +106,7 @@ response.addCookie(cookie);
 
 ## 示例：
 
-让我们修改[**表单示例**]( http://www.tutorialspoint.com/jsp/jsp-form-processing.htm)为名称设置 cookies。
+让我们修改[表单示例]( http://www.tutorialspoint.com/jsp/jsp-form-processing.htm)为名称设置 cookies。
 
 <pre class="prettyprint notranslate">
 &lt;%
