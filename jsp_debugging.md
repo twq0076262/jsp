@@ -20,28 +20,23 @@ System.out.println("Debugging message");
 
 下面是使用 System.out.println() 的一个简单的例子：
 
-<pre class="prettyprint notranslate">
-System.out.println("Debugging message");
-</pre>
-<p>Following is a simple example of using System.out.print():</p>
-<pre class="prettyprint notranslate tryit">
-&lt;%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt;
-&lt;html&gt;
-&lt;head&gt;&lt;title&gt;System.out.println&lt;/title&gt;&lt;/head&gt;
-&lt;body&gt;
-&lt;c:forEach var="counter" begin="1" end="10" step="1" &gt;
-   &lt;c:out value="${counter-5}"/&gt;&lt;/br&gt;
-   &lt;% System.out.println( "counter= " + 
-                     pageContext.findAttribute("counter") ); %&gt;
-&lt;/c:forEach&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+```
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<html>
+<head><title>System.out.println</title></head>
+<body>
+<c:forEach var="counter" begin="1" end="10" step="1" >
+   <c:out value="${counter-5}"/></br>
+   <% System.out.println( "counter= " + 
+                     pageContext.findAttribute("counter") ); %>
+</c:forEach>
+</body>
+</html>
+```
 
 现在如果你要试图访问上面的 JSP，它将会在浏览器上产生以下的结果：
 
-<pre class="result notranslate">
+```
 -4
 -3
 -2
@@ -52,12 +47,12 @@ System.out.println("Debugging message");
 3
 4
 5
-</pre>
+```
 
 
 如果你使用的是 Tomcat，你还将发现这些行会被附加到日志目录里 stdout.log  文件的末尾。
 
-<pre class="prettyprint notranslate">
+```
 counter=1
 counter=2
 counter=3
@@ -68,7 +63,7 @@ counter=7
 counter=8
 counter=9
 counter=10
-</pre>
+```
 
 
 这样你可以把变量和其他信息打印到系统日志中，可以分析找到问题的根本原因或者其他各种原因。 
@@ -79,33 +74,32 @@ J2SE 日志框架旨在为 JVM 中运行的任何类提供日志服务。所以�
 
 让我们使用 JDK 记录器 API 重写上面的示例：
 
-<pre class="prettyprint notranslate">
-&lt;%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt;
-&lt;%@page import="java.util.logging.Logger" %&gt;
+```
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page import="java.util.logging.Logger" %>
 
-&lt;html&gt;
-&lt;head&gt;&lt;title&gt;Logger.info&lt;/title&gt;&lt;/head&gt;
-&lt;body&gt;
-&lt;% Logger logger=Logger.getLogger(this.getClass().getName());%&gt;
+<html>
+<head><title>Logger.info</title></head>
+<body>
+<% Logger logger=Logger.getLogger(this.getClass().getName());%>
 
-&lt;c:forEach var="counter" begin="1" end="10" step="1" &gt;
-   &lt;c:set var="myCount" value="${counter-5}" /&gt;
-   &lt;c:out value="${myCount}"/&gt;&lt;/br&gt;
-   &lt;% String message = "counter="
+<c:forEach var="counter" begin="1" end="10" step="1" >
+   <c:set var="myCount" value="${counter-5}" />
+   <c:out value="${myCount}"/></br>
+   <% String message = "counter="
                   + pageContext.findAttribute("counter")
                   + " myCount="
                   + pageContext.findAttribute("myCount");
                   logger.info( message );
-   %&gt;
-&lt;/c:forEach&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+   %>
+</c:forEach>
+</body>
+</html>
+```
 
 这将在浏览器和 stdout.log 中生成相似的结果，但是会在 stdout.log 文件中有附加信息。在这里，我们使用记录器的 **info** 方法，因为我们只是为了信息的目的在记录消息。这是 stdout.log 文件的一个快照：
 
-<pre class="result notranslate">
+```
 24-Sep-2010 23:31:31 org.apache.jsp.main_jsp _jspService
 INFO: counter=1 myCount=-4
 24-Sep-2010 23:31:31 org.apache.jsp.main_jsp _jspService
@@ -126,7 +120,7 @@ INFO: counter=8 myCount=3
 INFO: counter=9 myCount=4
 24-Sep-2010 23:31:31 org.apache.jsp.main_jsp _jspService
 INFO: counter=10 myCount=5
-</pre>
+```
 
 
 可以通过使用方便的函数发送各种级别的消息，如 severe()， warning()， info()， config()， fine()， finer()， 和  finest()。这里，finest()  方法可以用于记录最好的信息，severe()  方法可以用于记录严峻的消息。

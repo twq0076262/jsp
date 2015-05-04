@@ -258,7 +258,7 @@ Taglib 指令遵循以下语法：
 - **ID 属性：**id 属性唯一的标识动作元素，允许在 JSP 页面中引用动作。如果动作创建一个对象的实例，id 值可以通过隐式对象 PageContext 对它进行引用。
 - **Scope 属性：**这个属性标识动作元素的生命周期。Id 属性和 scope 属性是直接相关的，scope 属性决定了与 id 属性相关的对象的寿命。scope 属性有四个可能的值：（a）页面，（b）请求，（c）会话，和（d）应用程序。
 
-**问：<jsp:include> 动作的功能是什么？**
+**问：< jsp:include > 动作的功能是什么？**
 
 **答：**该操作允许你将文件插入到生成的页面中。语法如下：
 
@@ -274,7 +274,7 @@ Taglib 指令遵循以下语法：
 
 **答：include 指令**是在 JSP 页面被翻译成一个 servlet 时插入一个文件，而**include 操作**是在页面被请求使插入文件。
 
-**问：什么是 <jsp:useBean> 操作？**
+**问：什么是 < jsp:useBean > 操作？**
 
 **答：useBean** 操作是非常通用的。它首先利用 id 和 scope 变量搜索一个现有的对象。如果没有找到一个对象，那么它试图创建一个指定的对象。
 
@@ -284,15 +284,15 @@ Taglib 指令遵循以下语法：
 <jsp:useBean id="name" class="package.class" />
 ```
 
-**问：什么是 <jsp:setProperty> 操作？**
+**问：什么是 < jsp:setProperty > 操作？**
 
 **答：setProperty** 操作设置一个 Bean 的属性。Bean 必须在该操作之前被定义。
 
-**问：什么是 <jsp:getProperty> 操作？**
+**问：什么是 < jsp:getProperty > 操作？**
 
 **答：getProperty** 操作被用于检索一个给定的属性值，并且将其转换为一个字符串，最后将它插入到输出。
 
-**问：什么是 <jsp:forward> 操作？**
+**问：什么是 < jsp:forward > 操作？**
 
 **答：forward** 操作终止当前的页面，并将请求转发给另一个资源，例如一个静态页面、另一个 JSP 页面，或者一个 Java Servlet。
 
@@ -302,7 +302,7 @@ Taglib 指令遵循以下语法：
 <jsp:forward page="Relative URL" />
 ```
 
-**问：什么是 <jsp:plugin> 操作？**
+**问：什么是 < jsp:plugin > 操作？**
 
 **答：plugin** 操作用于将 Java 组件插入到一个 JSP 页面。它决定了浏览器的类型和需要插入的 <object> 或者 <embed> 标签。
 

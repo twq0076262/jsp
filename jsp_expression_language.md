@@ -139,26 +139,25 @@ param 和 paramValues 对象通常通过 request.getParameter 和 request.getPar
 
 下面是访问命名为 username 的请求参数的例子：
 
-
-<pre class="prettyprint notranslate"> 
-&lt;%@ page import="java.io.*,java.util.*" %&gt;
-&lt;%
+```
+<%@ page import="java.io.*,java.util.*" %>
+<%
     String title = "Accessing Request Param";
-%&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;&lt;% out.print(title); %&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;center&gt;
-&lt;h1&gt;&lt;% out.print(title); %&gt;&lt;/h1&gt;
-&lt;/center&gt;
-&lt;div align="center"&gt;
-&lt;p&gt;${param["username"]}&lt;/p&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
+%>
+<html>
+<head>
+<title><% out.print(title); %></title>
+</head>
+<body>
+<center>
+<h1><% out.print(title); %></h1>
+</center>
+<div align="center">
+<p>${param["username"]}</p>
+</div>
+</body>
+</html>
+```
 
 param 对象返回单个字符串值，而 paramValues 对象返回字符串数组。
 
@@ -170,26 +169,25 @@ header 和 headerValue 对象通常通过 request.getHeader 和 request.getHeade
 
 下面是访问命名为 user-agent 的标头参数的例子：
 
-<pre class="prettyprint notranslate"> 
-&lt;%@ page import="java.io.*,java.util.*" %&gt;
-&lt;%
+```
+<%@ page import="java.io.*,java.util.*" %>
+<%
     String title = "User Agent Example";
-%&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;&lt;% out.print(title); %&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;center&gt;
-&lt;h1&gt;&lt;% out.print(title); %&gt;&lt;/h1&gt;
-&lt;/center&gt;
-&lt;div align="center"&gt;
-&lt;p&gt;${header["user-agent"]}&lt;/p&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+%>
+<html>
+<head>
+<title><% out.print(title); %></title>
+</head>
+<body>
+<center>
+<h1><% out.print(title); %></h1>
+</center>
+<div align="center">
+<p>${header["user-agent"]}</p>
+</div>
+</body>
+</html>
+```
 
 显示的结果如下：
 

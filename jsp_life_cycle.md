@@ -16,7 +16,7 @@ JSP 生命周期可以被定义为从创建到销毁的整个过程，这类似�
 
 JSP 生命周期的四个主要阶段非常类似于 Servlet 生命周期，它们如下所示：
 
-![lifecyle1](../images/life_cycle1.jpg)
+![lifecyle1](images/life_cycle1.jpg)
 
 ## JSP 编译：
 

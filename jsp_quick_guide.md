@@ -78,7 +78,7 @@ or
 
 成功启动之后，默认的 包含 Tomcat 的web 应用程序可以通过访问 **http://localhost:8080/** 进行执行。如果一切都很顺利，那么它将显示如下结果：
 
-![](../images/quickguide1.JPG)
+![](images/quickguide1.JPG)
 
 关于配置和运行 Tomcat 的更多信息可以在 included 文档中找到，也可以在 Tomcat web网站上找到：http://tomcat.apache.org
 
@@ -102,7 +102,7 @@ or
 
 上述所有步骤可用下图所示：
 
-![](../images/quickguide2.jpg)
+![](images/quickguide2.jpg)
 
 ## 脚本程序段: 
 
@@ -141,7 +141,7 @@ out.println("Your IP address is " + request.getRemoteAddr());
 
 让我们将上面的代码保留在 JSP 文件 hello.jsp 中，将这个文件放在 **C:\apache-tomcat-7.0.2\webapps\ROOT** 目录下，通过提供的 URL http://localhost:8080/hello.jsp 尝试浏览它。这将会生成如下图所示的结果：
 
-![](../images/quickguide3.jpg)
+![](images/quickguide3.jpg)
 
 ## JSP 声明: 
 
@@ -304,7 +304,7 @@ JSP 动作使用 XML 语法结构来控制 servlet 引擎的行为。你可以�
 <tr><td>jsp:text</td><td>用于在 JSP 页面和文档中编写模板文本。</td></tr>
 </table>
 
-我们将在不同的章节中解释 JSP 动作[JSP - Actions]( http://www.tutorialspoint.com/jsp/jsp_actions.htm)。
+我们将在不同的章节中解释 JSP 动作[JSP - Actions](jsp_directives.md)。
 
 ## JSP 隐式对象: 
 
@@ -323,7 +323,7 @@ JSP 支持9种自定义的变量，它们也被称为隐式对象。这些变量
 <tr><td>Exception</td><td>该 <b>Exception</b> 对象允许异常数据被指定的 JSP 访问。</td></tr>
 </table>
 
-我们将在不同的章节中解释 JSP 隐式对象[**JSP - Implicit Objects**]( http://www.tutorialspoint.com/jsp/jsp_implicit_objects.htm)。
+我们将在不同的章节中解释 JSP 隐式对象[**JSP - Implicit Objects**](jsp_implicit_objects.md)。
 
 ## 控制流语句:
 
@@ -333,20 +333,19 @@ JSP 提供了强有力的 Java 来嵌入到你的 web 应用程序中。你可�
 
 **If…else** 块开始像一个普通的脚本，但是脚本在每一行是用 HTML 文本封闭的，包含在脚本标签之间的。
 
-<pre class="prettyprint notranslate">
-&lt;%! int day = 3; %&gt; 
-&lt;html&gt; 
-&lt;head&gt;&lt;title&gt;IF...ELSE Example&lt;/title&gt;&lt;/head&gt; 
-&lt;body&gt;
-&lt;% if (day == 1 | day == 7) { %&gt;
-      &lt;p&gt; Today is weekend&lt;/p&gt;
-&lt;% } else { %&gt;
-      &lt;p&gt; Today is not weekend&lt;/p&gt;
-&lt;% } %&gt;
-&lt;/body&gt; 
-&lt;/html&gt; 
-</pre>
-
+```
+<%! int day = 3; %> 
+<html> 
+<head><title>IF...ELSE Example</title></head> 
+<body>
+<% if (day == 1 | day == 7) { %>
+      <p> Today is weekend</p>
+<% } else { %>
+      <p> Today is not weekend</p>
+<% } %>
+</body> 
+</html> 
+```
 
 这将产生以下的结果：
 
@@ -359,12 +358,12 @@ JSP 提供了强有力的 Java 来嵌入到你的 web 应用程序中。你可�
 
 现在看看下面的 **switch…case** 块，在脚本内，它通过使用 **out.println()** 写出不同的值：
 
-<pre class="prettyprint notranslate">
-&lt;%! int day = 3; %&gt; 
-&lt;html&gt; 
-&lt;head&gt;&lt;title&gt;SWITCH...CASE Example&lt;/title&gt;&lt;/head&gt; 
-&lt;body&gt;
-&lt;% 
+```
+<%! int day = 3; %> 
+<html> 
+<head><title>SWITCH...CASE Example</title></head> 
+<body>
+<% 
 switch(day) {
 case 0:
    out.println("It\'s Sunday.");
@@ -387,11 +386,10 @@ case 5:
 default:
    out.println("It's Saturday.");
 }
-%&gt;
-&lt;/body&gt; 
-&lt;/html&gt; 
-</pre>
-
+%>
+</body> 
+</html> 
+```
 
 这将产生以下结果：
 
@@ -407,20 +405,19 @@ default:
 
 让我们看看下面的 **for** 循环的例子：
 
-<pre class="prettyprint notranslate">
-&lt;%! int fontSize; %&gt; 
-&lt;html&gt; 
-&lt;head&gt;&lt;title&gt;FOR LOOP Example&lt;/title&gt;&lt;/head&gt; 
-&lt;body&gt;
-&lt;%for ( fontSize = 1; fontSize &lt;= 3; fontSize++){ %&gt;
-   &lt;font color="green" size="&lt;%= fontSize %&gt;"&gt;
+```
+<%! int fontSize; %> 
+<html> 
+<head><title>FOR LOOP Example</title></head> 
+<body>
+<%for ( fontSize = 1; fontSize <= 3; fontSize++){ %>
+   <font color="green" size="<%= fontSize %>">
     JSP Tutorial
-   &lt;/font&gt;&lt;br /&gt;
-&lt;%}%&gt;
-&lt;/body&gt; 
-&lt;/html&gt; 
-</pre>
-
+   </font><br />
+<%}%>
+</body> 
+</html> 
+```
 
 这将产生以下结果：
 
@@ -441,21 +438,20 @@ default:
 
 上面的例子可以用 **while** 循环写成如下形式：
 
-<pre class="prettyprint notranslate">
-&lt;%! int fontSize; %&gt; 
-&lt;html&gt; 
-&lt;head&gt;&lt;title&gt;WHILE LOOP Example&lt;/title&gt;&lt;/head&gt; 
-&lt;body&gt;
-&lt;%while ( fontSize &lt;= 3){ %&gt;
-   &lt;font color="green" size="&lt;%= fontSize %&gt;"&gt;
+```
+<%! int fontSize; %> 
+<html> 
+<head><title>WHILE LOOP Example</title></head> 
+<body>
+<%while ( fontSize <= 3){ %>
+   <font color="green" size="<%= fontSize %>">
     JSP Tutorial
-   &lt;/font&gt;&lt;br /&gt;
-&lt;%fontSize++;%&gt;
-&lt;%}%&gt;
-&lt;/body&gt; 
-&lt;/html&gt; 
-</pre>
-
+   </font><br />
+<%fontSize++;%>
+<%}%>
+</body> 
+</html> 
+```
 
 这将产生以下结果：
 

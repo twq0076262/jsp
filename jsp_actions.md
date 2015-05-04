@@ -114,7 +114,7 @@ JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以�
 
 在给出与这些操作有关的有效的例子之前，让我们先讨论一下 **jsp:setProperty** 和 **jsp:getProperty** 操作。
 
-## <jsp:setProperty>操作
+## < jsp:setProperty >操作
 
 **setProperty** 操作设置了 Bean 的属性。在定义该操作之前， Bean 一定已经预定义了。有两种使用 setProperty 操作的基本的方式：
 
@@ -168,6 +168,7 @@ getProperty 操作只有两个属性，两者都是必需的，其简单的语�
 <tr><td>name</td><td>有检索属性的 Bean 的名称。Bean 一定是之前定义的。</td></tr>
 <tr><td>property</td><td> property 属性是要被检索的 Bean 属性的名称。</td></tr>
 </table> 
+
 ## 例子：
 
 让我们定义一个测试的 bean，在例子中使用如下所示：
@@ -349,7 +350,7 @@ Hello JSP...
 </pre>
 
 
-## <jsp:text>操作
+## < jsp:text >操作
 
 <jsp:text>操作可以用于在 jsp 页面和文档中编写模板文本。以下是该操作的简单的语法：
 
@@ -382,4 +383,4 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 </pre>
 
 
-在使用<jsp:text>操作和不使用该操作的两种情况下尝试上述例子。
+在使用< jsp:text >操作和不使用该操作的两种情况下尝试上述例子。
