@@ -1,7 +1,7 @@
 {
-    "name": "Ruby 中文版",
-    "introduction": "Ruby 是一种开源的面向对象程序设计的服务器端脚本语言，在 20 世纪 90 年代中期由日本的松本行弘设计并开发。Ruby 可运行于多种平台，如 Windows、MAC OS 和 UNIX 的各种版本。",
-    "title": "Ruby 中文版- 极客学院 Wiki",
-    "keywords": "Ruby 中文版,Ruby,编程,脚本语言",
-    "description": "Ruby 是一种开源的面向对象程序设计的服务器端脚本语言，在 20 世纪 90 年代中期由日本的松本行弘设计并开发。Ruby 可运行于多种平台，如 Windows、MAC OS 和 UNIX 的各种版本。"
+    "name": "JSP 中文版",
+    "introduction": "Java 服务器页面(JSP)是一种服务器端编程技术，能够为构建基于 web 的应用程序创建动态的独立于平台的方法。JSP 可以访问 Java API 的整个家族，包括访问 enterprise 数据库的 JDBC API。",
+    "title": "JSP 中文版- 极客学院 Wiki",
+    "keywords": "JSP 中文版,JSP,jsp教程,java服务器页面",
+    "description": "Java 服务器页面(JSP)是一种服务器端编程技术，能够为构建基于 web 的应用程序创建动态的独立于平台的方法。JSP 可以访问 Java API 的整个家族，包括访问 enterprise 数据库的 JDBC API。"
 }
