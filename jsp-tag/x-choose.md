@@ -1,16 +1,16 @@
 # JSTL XML < x:choose >, < x:when >, < x:otherwise > 标签
 
-< x:choose > 标签的工作方式类似于 Java 的 **switch** 语句，允许你在许多选项中进行选择。**switch** 语句有 **case** 语句，< x:choose > 标签有 < x:when > 标签。switch 语句有**缺省**子句来指定默认操作，同样的，< x:choose > 标签也有 < x:otherwise > 标签作为缺省子句。
+`<x:choose>` 标签的工作方式类似于 Java 的 **switch** 语句，允许你在许多选项中进行选择。**switch** 语句有 **case** 语句，`<x:choose>` 标签有 `<x:when>` 标签。switch 语句有**缺省**子句来指定默认操作，同样的，`<x:choose>` 标签也有 `<x:otherwise>` 标签作为缺省子句。
 
 ## 属性：
 
-- < x:choose > 标签没有任何属性。
+- `<x:choose>` 标签没有任何属性。
 
-- < x:when > 标签有一个属性，如下所示。
+- `<x:when>` 标签有一个属性，如下所示。
 
-- < x:otherwise > 标签没有任何属性。
+- `<x:otherwise>` 标签没有任何属性。
 
-< x:when > 标签具有如下所示属性：
+`<x:when>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

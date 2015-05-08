@@ -1,10 +1,10 @@
 # JSTL SQL < sql:dateParam > 标签
 
-< sql:dateParam > 标签用作 < sql:query > 和 < sql:update > 的嵌套操作，为值占位符提供日期和时间值。如果提供的是一个空值，那么该占位符的值就会被设置为 SQL NULL。
+`<sql:dateParam>` 标签用作 `<sql:query>` 和 `<sql:update>` 的嵌套操作，为值占位符提供日期和时间值。如果提供的是一个空值，那么该占位符的值就会被设置为 SQL NULL。
 
 ## 属性：
 
-< sql:dateParam > 标签具有如下所示属性：
+`<sql:dateParam>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
@@ -73,7 +73,7 @@ Query OK, 1 row affected (0.00 sec)
 mysql>
 ```
 
-现在编写 JSP，将 <sql:update> 标签与 <sql:param> 和 <sql:dataParam> 标签一起使用来执行 SQL UPDATE 语句来更新 Zara 的生日日期：
+现在编写 JSP，将 `<sql:update>` 标签与 `<sql:param>` 和 `<sql:dataParam>` 标签一起使用来执行 SQL UPDATE 语句来更新 Zara 的生日日期：
 
 <pre class="prettyprint notranslate tryit">
 &lt;%@ page import="java.io.*,java.util.*,java.sql.*"%&gt;

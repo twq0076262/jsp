@@ -1,10 +1,10 @@
 # JSTL SQL < sql:update > 标签
 
-< sql:update > 标签执行不返回数据的 SQL 语句，例如 SQL INSERT，UPDATE，或 DELETE 语句。
+`<sql:update>` 标签执行不返回数据的 SQL 语句，例如 SQL INSERT，UPDATE，或 DELETE 语句。
 
 ## 属性：
 
-< sql:update > 标签具有如下所示属性：
+`<sql:update>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
@@ -71,7 +71,7 @@ Query OK, 1 row affected (0.00 sec)
 mysql>
 ```
 
-现在编写 JSP，使用 <sql:update> 标签来执行 SQL INSERT 语句，从而在表中创建一条记录，如下所示：
+现在编写 JSP，使用 `<sql:update>` 标签来执行 SQL INSERT 语句，从而在表中创建一条记录，如下所示：
 
 <pre class="prettyprint notranslate">
 &lt;%@ page import="java.io.*,java.util.*,java.sql.*"%&gt;

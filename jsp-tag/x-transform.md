@@ -1,10 +1,10 @@
 # JSTL XML < x:transform > 标签
 
-< x:transform > 标签用于 XML 文档中的 XML 转换。
+`<x:transform>` 标签用于 XML 文档中的 XML 转换。
 
 ## 属性：
 
-< x:transform > 标签具有如下所示属性：
+`<x:transform>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

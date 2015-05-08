@@ -1,10 +1,10 @@
 # JSTL XML < x:if > 标签
 
-< x:if > 标签计算了一个测试 XPath 表达式，如果测试条件为真，则处理它的主体，如果测试条件为假，主体就被忽略。
+`<x:if>` 标签计算了一个测试 XPath 表达式，如果测试条件为真，则处理它的主体，如果测试条件为假，主体就被忽略。
 
 ## 属性：
 
-< x:if > 标签具有如下所示属性：
+`<x:if>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
@@ -15,7 +15,7 @@
 
 ## 实例：
 
-下述例子向你展示了如何使用 <x:if> 标签：
+下述例子向你展示了如何使用 `<x:if>` 标签：
 
 <pre class="prettyprint notranslate tryit">
 &lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt;

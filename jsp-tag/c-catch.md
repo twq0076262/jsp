@@ -1,10 +1,10 @@
 # JSTL Core < c:catch > 标签
 
-< c:catch > 标签捕获发生在标签主题中的任何异常并有选择地公开它。它仅仅是用于错误处理和更得体地处理这个问题。
+`<c:catch>` 标签捕获发生在标签主题中的任何异常并有选择地公开它。它仅仅是用于错误处理和更得体地处理这个问题。
 
 ## 属性：
 
-< c:catch > 标签具有如下所示属性：
+`<c:catch>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

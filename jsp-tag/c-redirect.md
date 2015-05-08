@@ -1,10 +1,10 @@
 # JSTL Core < c:redirect > 标签
 
-< c:redirect > 标签通过提供自动 URL 重写，将浏览器重定向到另一个 URL，它支持上下文相关的 URL，支持 <c:param> 标签。
+`<c:redirect>` 标签通过提供自动 URL 重写，将浏览器重定向到另一个 URL，它支持上下文相关的 URL，支持 `<c:param>` 标签。
 
 ## 属性
 
-< c:redirect > 标签具有如下所示属性：
+`<c:redirect>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

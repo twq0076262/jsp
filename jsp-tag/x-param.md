@@ -1,10 +1,10 @@
 # JSTL XML < x:param > 标签
 
-< x:param > 标签和转换标签一起使用来设置 XSLT 样式表中的参数。
+`<x:param>` 标签和转换标签一起使用来设置 XSLT 样式表中的参数。
 
 ## 属性：
 
-< x:param > 标签具有如下所示属性：
+`<x:param>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
@@ -14,7 +14,7 @@
 
 ## 实例：
 
-考虑下述 XSLT 样式表 style.xsl。注意 < xsl:param... > 标签和变量 {$bgColor} 的使用：
+考虑下述 XSLT 样式表 style.xsl。注意 `<xsl:param...>` 标签和变量 {$bgColor} 的使用：
 
 <pre class="prettyprint notranslate">
 &lt;?xml version="1.0"?&gt;
@@ -52,7 +52,7 @@
 &lt;/xsl:stylesheet&gt;
 </pre>
 
-现在考虑如下所示的 JSP 文件，其中我们在 <x:transform> 标签内用 <x:param> 标签定义了 bgColor 的值：
+现在考虑如下所示的 JSP 文件，其中我们在 `<x:transform>` 标签内用 `<x:param>` 标签定义了 bgColor 的值：
 
 <pre class="prettyprint notranslate">
 &lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt;

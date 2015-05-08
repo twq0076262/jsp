@@ -1,12 +1,12 @@
 # JSTL XML < x:set > 标签
 
-< x:set > 标签为 XPath 表达式的值设置变量。
+`<x:set>` 标签为 XPath 表达式的值设置变量。
 
 如果 XPath 表达式的结果是一个布尔值，<x:set> 标签就设置 java.lang.Boolean 对象；若结果是一个字符串，就设置 java.lang.String 对象；若结果是一个数值，就设置 java.lang.Number 对象。
 
 ## 属性：
 
-< x:set > 标签具有如下所示属性：
+`<x:set>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
@@ -17,7 +17,7 @@
 
 ## 实例：
  
-下述例子向你展示了如何使用 <x:set> 标签：
+下述例子向你展示了如何使用 `<x:set>` 标签：
 
 <pre class="prettyprint notranslate tryit">
 &lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt;

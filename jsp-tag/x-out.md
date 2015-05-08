@@ -1,10 +1,10 @@
 # JSTL XML < x:out > 标签
 
-< x:out > 标签显示 XPath 表达式的结果，它的作用和 JSP 语法中的 <%= %> 类似。
+`<x:out>` 标签显示 XPath 表达式的结果，它的作用和 JSP 语法中的 `<%= %>` 类似。
 
 ## 属性：
 
-< x:out > 标签具有如下所示属性：
+`<x:out>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

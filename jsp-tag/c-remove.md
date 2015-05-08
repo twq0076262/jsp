@@ -1,10 +1,10 @@
 # JSTL Core < c:remove > 标签
 
-< c:remove > 标签从指定的范围或变量被发现的首个范围中(如果没有指定范围)删除变量。该操作通常并不是特别有用，但是它可以帮助确保 JSP 清理任何 JSP 负责的限定作用域资源。
+`<c:remove>` 标签从指定的范围或变量被发现的首个范围中(如果没有指定范围)删除变量。该操作通常并不是特别有用，但是它可以帮助确保 JSP 清理任何 JSP 负责的限定作用域资源。
 
 ## 属性：
 
-< c:remove > 标签具有如下所示属性：
+`<c:remove>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

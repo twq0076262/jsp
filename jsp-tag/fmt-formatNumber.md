@@ -1,10 +1,10 @@
 # JSTL Core < fmt:formatNumber > 标签
 
-< fmt:formatNumber > 标签用于格式化数字，百分比和货币。
+`<fmt:formatNumber>` 标签用于格式化数字，百分比和货币。
 
 ## 属性：
 
-< fmt:formatNumber > 标签具有如下所示属性：
+`<fmt:formatNumber>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

@@ -1,10 +1,10 @@
 # JSTL SQL < sql:param > 标签
 
-< sql:param > 标签用于 <sql:query> 和 <sql:update> 标签的嵌套操作，来为一个值的占位符提供值。如果提供了一个空值，那么占位符就会被设置为 SQL NULL。
+`<sql:param>` 标签用于 `<sql:query>` 和 `<sql:update>` 标签的嵌套操作，来为一个值的占位符提供值。如果提供了一个空值，那么占位符就会被设置为 SQL NULL。
 
 ## 属性：
 
-< sql:param > 标签具有如下属性：
+`<sql:param>` 标签具有如下属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
@@ -68,7 +68,7 @@ Query OK, 1 row affected (0.00 sec)
 mysql>
 ```
 
-现在编写 JSP，使用 <sql:update> 标签来执行 SQL DELETE 语句来从表中删除一条 id=103 的记录，如下所示：
+现在编写 JSP，使用 `<sql:update>` 标签来执行 SQL DELETE 语句来从表中删除一条 id=103 的记录，如下所示：
 
 <pre class="prettyprint notranslate tryit">
 &lt;%@ page import="java.io.*,java.util.*,java.sql.*"%&gt;
@@ -149,4 +149,4 @@ mysql>
 </table>
 </pre>
 
-你可以用这里我使用的 DELETE 语句同样的方式尝试 SQL UPDATE 和 SELECT 语句的 < sql:param > 标签
+你可以用这里我使用的 DELETE 语句同样的方式尝试 SQL UPDATE 和 SELECT 语句的 `<sql:param>` 标签

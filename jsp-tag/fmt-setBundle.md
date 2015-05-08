@@ -1,10 +1,10 @@
 # JSTL Core < fmt:setBundle > 标签
 
-< fmt:setBundle > 标签用于加载资源包，并把它存储在已命名的给定范围的变量中或存储在包配置变量中。
+`<fmt:setBundle>` 标签用于加载资源包，并把它存储在已命名的给定范围的变量中或存储在包配置变量中。
 
 ## 属性：
 
-< fmt:setBundle > 标签具有如下所示属性：
+`<fmt:setBundle>` 标签具有如下所示属性：
 
 <table class="src">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

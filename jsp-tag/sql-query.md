@@ -1,10 +1,10 @@
 # JSTL SQL < sql:query > 标签
 
-< sql:query > 标签执行 SQL SELECT 语句并将结果保存到给定范围的变量中。
+`<sql:query>` 标签执行 SQL SELECT 语句并将结果保存到给定范围的变量中。
 
 ## 属性：
 
-< sql:query > 标签具有如下所示属性：
+`<sql:query>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
@@ -73,7 +73,7 @@ Query OK, 1 row affected (0.00 sec)
 mysql>
 ```
 
-现在让我们编写一个 JSP，使用 <sql:query> 来执行 SQL SELECT 语句，如下所示：
+现在让我们编写一个 JSP，使用 `<sql:query>` 来执行 SQL SELECT 语句，如下所示：
 
 <pre class="prettyprint notranslate tryit">
 &lt;%@ page import="java.io.*,java.util.*,java.sql.*"%&gt;

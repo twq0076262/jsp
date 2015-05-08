@@ -1,10 +1,10 @@
 # JSTL Core < fmt:setLocale > 标签
 
-< fmt:setLocale > 标签用于在语言环境配置变量中存储给定的语言环境。
+`<fmt:setLocale>` 标签用于在语言环境配置变量中存储给定的语言环境。
 
 ## 属性：
 
-< fmt:setLocale > 标签具有如下所示属性：
+`<fmt:setLocale>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th width="15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

@@ -1,16 +1,16 @@
 # JSTL Core < c:choose >, < c:when >, < c:otherwise > 标签
 
-< c:choose > 就像 Java **switch** 语句，它可以让你进行一些选择。正如 **switch** 语句有 **case** 语句，<c:choose> 标签有 <c:when> 标签。一个 switch 语句中有 **default** 子句来指定一个默认的操作，同样的方式<c:choose>有<c:otherwise>作为默认子句。
+`<c:choose>` 就像 Java **switch** 语句，它可以让你进行一些选择。正如 **switch** 语句有 **case** 语句，`<c:choose>` 标签有 `<c:when>` 标签。一个 switch 语句中有 **default** 子句来指定一个默认的操作，同样的方式`<c:choose>有<c:otherwise>`作为默认子句。
 
 ## 属性: 
 
-- < c:choose > 标签没有任何属性。
+- `<c:choose>` 标签没有任何属性。
 
-- < c:when > 标签有一个属性，在下面列出了。
+- `<c:when>` 标签有一个属性，在下面列出了。
 
-- < c:otherwise > 标签没有任何属性。
+- `<c:otherwise>` 标签没有任何属性。
 
-< c:when > 标签具有以下属性：
+`<c:when>` 标签具有以下属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
