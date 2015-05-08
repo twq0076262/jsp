@@ -1,12 +1,12 @@
 # JSTL Core < c:import > 标签
 
-< c:import > 标签提供了 < include > 操作的所有的功能，同时也可以包含绝对URL。
+`<c:import>` 标签提供了 `<include>` 操作的所有的功能，同时也可以包含绝对URL。
 
 例如，使用 import 标签允许包含来自不同的 Web 站点或 FTP 服务器的内容。
 
 ## 属性: 
 
-< c:import >标签具有以下属性：
+`<c:import>`标签具有以下属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

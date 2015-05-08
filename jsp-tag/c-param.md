@@ -1,13 +1,13 @@
 # JSTL Core < c:param > 标签
 
-< c:param > 标签允许 URL 指定适当的 URL 请求参数，且允许任何必要的 URL 编码要求。
+`<c:param>` 标签允许 URL 指定适当的 URL 请求参数，且允许任何必要的 URL 编码要求。
 
 
-在 < c:param > 标签内 name 属性表示参数名称，value 属性显示参数值:
+在 `<c:param>` 标签内 name 属性表示参数名称，value 属性显示参数值:
 
 ## 属性：
 
-< c:param > 标签具有如下所示属性：
+`<c:param>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

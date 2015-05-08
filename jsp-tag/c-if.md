@@ -1,10 +1,10 @@
 # JSTL Core < c:if > 标签
 
-< c:if > 标签计算表达式，当且仅当表达式的值为真时，显示其主体内容。
+`<c:if>` 标签计算表达式，当且仅当表达式的值为真时，显示其主体内容。
 
 ## 属性：
 
-< c:if > 标签具有如下所示属性：
+`<c:if>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

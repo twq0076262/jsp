@@ -1,10 +1,10 @@
 # JSTL XML < x:parse > 标签
 
-< x:parse > 标签用于解析通过一个属性或在标签本体中指定的 MXL 数据。
+`<x:parse>` 标签用于解析通过一个属性或在标签本体中指定的 MXL 数据。
 
 ## 属性：
 
-< x:parse > 标签具有如下所示属性：
+`<x:parse>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

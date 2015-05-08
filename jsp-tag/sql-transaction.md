@@ -1,12 +1,12 @@
 # JSTL SQL < sql:transaction > 标签
 
-< sql:transaction > 标签用于将 < sql:query > 和 < sql:update > 标签分组到事物中。你可以在 < sql:transaction > 标签中放入和语句一样多的 < sql:query > 和 < sql:update > 标签，使它们成为单独的事物。
+`<sql:transaction>` 标签用于将 `<sql:query>` 和 `<sql:update>` 标签分组到事物中。你可以在 `<sql:transaction>` 标签中放入和语句一样多的 `<sql:query>` 和 `<sql:update>` 标签，使它们成为单独的事物。
 
 如果任何嵌套操作抛出一个异常，它确保由嵌套操作执行的数据库修改要么提交要么回滚。
 
 ## 属性：
 
-< sql:transaction > 标签具有如下所示属性：
+`<sql:transaction>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
@@ -76,7 +76,7 @@ Query OK, 1 row affected (0.00 sec)
 mysql>
 ```
 
-现在编写 JSP，使用 < sql:update > 和 < sql:transaction > 标签来执行 SQL UPDATE 语句。在这里 < sql:transaction > 标签内的代码要么被完全执行，要么一点也不执行：
+现在编写 JSP，使用 `<sql:update>` 和 `<sql:transaction>` 标签来执行 SQL UPDATE 语句。在这里 `<sql:transaction>` 标签内的代码要么被完全执行，要么一点也不执行：
 
 <pre class="prettyprint notranslate tryit">
 &lt;%@ page import="java.io.*,java.util.*,java.sql.*"%&gt;

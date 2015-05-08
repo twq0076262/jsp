@@ -1,10 +1,10 @@
 # JSTL XML < x:forEach > 标签
 
-< x:forEach > 标签用于在 XML 文档中的代码中循环。
+`<x:forEach>` 标签用于在 XML 文档中的代码中循环。
 
 ## 属性：
 
-< x:forEach > 标签具有如下所示属性：
+`<x:forEach>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

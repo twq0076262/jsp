@@ -1,10 +1,10 @@
 # JSTL SQL < sql:setDataSource > 标签
 
-< sql:setDataSource > 标签设置了数据源配置变量或将数据源信息保存到一个指定范围的变量中，该变量可用作为其他 JSTL 数据库操作的输入。
+`<sql:setDataSource>` 标签设置了数据源配置变量或将数据源信息保存到一个指定范围的变量中，该变量可用作为其他 JSTL 数据库操作的输入。
 
 ## 属性：
 
-< sql:setDataSource > 标签具有如下所示属性：
+`<sql:setDataSource>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

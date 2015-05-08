@@ -1,9 +1,9 @@
 # JSTL Core < fmt:bundle > 标签
 
-< fmt:bundle > 标签使指定的包对所有的出现在 < fmt:bundle > 和 < /fmt:bundle > 标签之间的 < fmt:message > 标签是可用的。这可以节省你的额外的步骤为每个 < fmt:message > 标签指定资源包。
+`<fmt:bundle>` 标签使指定的包对所有的出现在 `<fmt:bundle>` 和 `</fmt:bundle>` 标签之间的 `<fmt:message>` 标签是可用的。这可以节省你的额外的步骤为每个 `<fmt:message>` 标签指定资源包。
 
 
-例如，下面的两个 < fmt:bundle > 块会产生相同的输出：
+例如，下面的两个 `<fmt:bundle>` 块会产生相同的输出：
 
 ``` 
 <fmt:bundle basename="com.tutorialspoint.Example">
@@ -16,7 +16,7 @@
 
 ## 属性：
 
-< fmt:bundle > 标签具有如下所示属性：
+`<fmt:bundle>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

@@ -1,10 +1,10 @@
 # JSTL Core < fmt:setTimeZone > 标签
 
-< fmt:setTimeZone > 标签用于将时区对象复制到指定的范围变量中。
+`<fmt:setTimeZone>` 标签用于将时区对象复制到指定的范围变量中。
 
 ## 属性：
 
-< fmt:setTimeZone > 标签具有如下所示属性：
+`<fmt:setTimeZone>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

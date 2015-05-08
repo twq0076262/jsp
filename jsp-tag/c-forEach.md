@@ -1,10 +1,10 @@
 # JSTL Core < c:forEach >, < c:forTokens > 标签
 
-这些标签是通过一个小脚本嵌入 Java **for**，**while** 或 **do-while** 循环的不错的选择。< c:forEach > 标签更常用的标签，因为它遍历一个对象集合。< c:forTokens > 标签用于将一个字符串分成 token 并遍历每个 token。
+这些标签是通过一个小脚本嵌入 Java **for**，**while** 或 **do-while** 循环的不错的选择。`<c:forEach>` 标签更常用的标签，因为它遍历一个对象集合。`<c:forTokens>` 标签用于将一个字符串分成 token 并遍历每个 token。
 
 ## 属性：
 
-< c:forEach > 标签具有如下所示属性：
+`<c:forEach>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

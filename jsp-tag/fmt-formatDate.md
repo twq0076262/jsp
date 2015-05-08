@@ -1,10 +1,10 @@
 # JSTL Core < fmt:formatDate > 标签
 
-< fmt:formatDate > 标签用于以多种方式格式化日期。
+`<fmt:formatDate>` 标签用于以多种方式格式化日期。
 
 ## 属性：
 
-< fmt:formatDate > 标签具有如下所示属性：
+`<fmt:formatDate>` 标签具有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
