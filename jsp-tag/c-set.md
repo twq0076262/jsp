@@ -1,10 +1,11 @@
 # JSTL Core < c:set > 标签
 
-< c:set > 标签是 setProperty 操作的 JSTL-友好版本。该标签非常有用，因为它计算表达式并使用计算结果来设置 JavaBean 或 java.util.Map 对象的值。
+`<c:set>` 标签是 setProperty 操作的 JSTL-友好版本。该标签非常有用，因为它计算表达式并使用计算结果来设置 JavaBean 或 java.util.Map 对象的值。
 
 ## 属性：
 
-< c:set > 标签具有如下所示属性：
+`<c:set>` 标签具有如下所示属性：
+
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>

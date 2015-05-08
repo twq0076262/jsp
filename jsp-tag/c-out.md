@@ -1,12 +1,12 @@
 # JSTL Core < c:out > 标签
 
-< c:out > 标签显示表达式的结果，与 <%= %> 的工作方式类似，但有一点不同是 <c:out> 标签让你使用更简单的 "." 符号来访问属性。例如，访问 customer.address.street 只需要使用 <c:out value="customer.address.street"/> 就可以了。
+`<c:out>` 标签显示表达式的结果，与 `<%= %>` 的工作方式类似，但有一点不同是 `<c:out>` 标签让你使用更简单的 "." 符号来访问属性。例如，访问 customer.address.street 只需要使用 `<c:out value="customer.address.street"/>` 就可以了。
 
-< c:out > 标签可以自动转义 XML 标记,所以它们并不像实际标签一样被评估。
+ `<c:out>`  标签可以自动转义 XML 标记,所以它们并不像实际标签一样被评估。
 
 ## 属性：
 
-<c:out> 标签有如下所示属性：
+`<c:out>` 标签有如下所示属性：
 
 <table class="table table-bordered">
 <tr><th style="width:15%">属性</th><th>描述 </th><th>是否必需</th><th>默认值</th></tr>
