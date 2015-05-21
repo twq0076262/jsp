@@ -26,7 +26,7 @@ Web 客户端和 web 服务器之间的会话有以下三种方式：
 
 你可以在每个识别会话的 URL 结尾添加一些额外的数据，且服务器可以用它存储的关于会话的数据与会话标识符关联起来。
 
-例如，http://tutorialspoint.com/file.htm;sessionid = 12345，会话标识符作为 sessionid = 12345 附加，也可以在web服务器访问来识别客户端。
+例如，`http://tutorialspoint.com/file.htm;sessionid = 12345`，会话标识符作为 `sessionid = 12345` 附加，也可以在web服务器访问来识别客户端。
 
 当它们不支持 cookie 时，URL 重写是维持会话和适用于浏览器的一个更好的方法，但缺点是尽管页面是简单的静态 HTML 页面，但需要动态的生成每个URL来分配一个会话 ID。
 

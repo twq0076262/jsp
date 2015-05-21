@@ -153,7 +153,7 @@ NetBeans 支持以下基本的调试功能：
 
 - 设置你的调试器的类路径，以便于找到你的 JSP 和支持的类，典型的是 ROOT\WEB-INF\classes。
 
-一旦你已经正确的设置了类路径，开始调试 sun.servlet.http.HttpServer。对于一个给定的 JSP，你可以在你感兴趣的任何地方设置断点，然后通过一个 web 浏览器来发送一个请求到 HttpServer (http://localhost:8080/JSPToDebug)。你会看到执行会在你设置的断点处停止。
+一旦你已经正确的设置了类路径，开始调试 sun.servlet.http.HttpServer。对于一个给定的 JSP，你可以在你感兴趣的任何地方设置断点，然后通过一个 web 浏览器来发送一个请求到 HttpServer (http://localhost:8080/JSPToDebug )。你会看到执行会在你设置的断点处停止。
 
 ## 使用注释：
 

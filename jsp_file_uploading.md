@@ -150,7 +150,7 @@ Select a file to upload: &lt;br /&gt;
 %>
 ```
 
-现在尝试用你在上面创建的 HTML 表单来上传文件。当你运行 http://localhost:8080/UploadFile.htm，它将显示如下结果，它将帮助你从本地电脑上上传任意文件。
+现在尝试用你在上面创建的 HTML 表单来上传文件。当你运行 `http://localhost:8080/UploadFile.htm`，它将显示如下结果，它将帮助你从本地电脑上上传任意文件。
 
 <pre class="result notranslate"> 
 <b>File Upload:</b> 

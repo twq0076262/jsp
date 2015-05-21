@@ -40,7 +40,7 @@ JSP 以自动解析的方式处理表单数据，根据情况不同使用以下�
 
 这是一个简单的 URL 示例，使用 GET 方法将两个值传递给 HelloForm 程序。
 
-**http://localhost:8080 / main.jsp ? first_name = ZARA&last_name =ALI** 
+**http: // localhost:8080 / main.jsp ? first_name = ZARA&last_name =ALI** 
 下面是 **main.jsp** JSP程序来处理由web浏览器给定的输入。我们将使用 **getParameter()** 方法使访问传递信息变得容易：
 
 <pre class="prettyprint notranslate tryit">

@@ -73,7 +73,7 @@ Date(long millisec)
 </pre>
 
 
-尝试刷新 URL http://localhost:8080/CurrentDate.jsp，你将会发现每一次刷新都会有几秒钟的区别。 
+尝试刷新 URL http://localhost:8080/CurrentDate.jsp ，你将会发现每一次刷新都会有几秒钟的区别。 
 
 ## 日期比较： 
 
