@@ -1,4 +1,4 @@
-# 标准标签库（JSTL）教程 
+# JSP - 标准标签库 
 
 JSP 标准标签库（JSTL）是一组有效的 JSP 标签，它封装了很多 JSP 应用程序的核心功能。 
 
@@ -16,7 +16,7 @@ JSTL 标签根据它们的功能进行分类，划分到 JSTL 标签库中，当
 
 - JSTL 函数标签库 
 
-## 安装 JSTL 标签库： 
+## 安装 JSTL 标签库 
 
 如果你使用的是 Apache Tomcat 容器，然后遵循以下两个简单的步骤： 
 
@@ -26,7 +26,7 @@ JSTL 标签根据它们的功能进行分类，划分到 JSTL 标签库中，当
 
 为了使用所有的库，你必须在要使用该库的每个 JSP 页面的头部中引入<taglib>指令。 
 
-## 核心标签库： 
+## 核心标签库
 
 核心标签库是被广泛使用的 JSTL 标签库。下面是在 JSP 页面中引入核心标签库时需要使用的指令：
 
@@ -55,7 +55,7 @@ JSTL 标签根据它们的功能进行分类，划分到 JSTL 标签库中，当
 <tr><td><a href="jsp-tag/c-url.md">&lt;c:url&gt;</a></td><td>创建一个带有选项查询参数的 URL。</td></tr>
 </table>
 
-## 格式标签库： 
+## 格式标签库 
 
 JSTL 的格式标签库是用于格式化和显示国际化网址的文本、日期、时间和数字。下面是在 JSP 页面中引入格式标签库时需要使用的指令： 
 
@@ -81,7 +81,7 @@ JSTL 的格式标签库是用于格式化和显示国际化网址的文本、日
 <tr><td><a href="jsp-tag/fmt-requestEncoding.md">&lt;fmt:requestEncoding&gt;</a></td><td>设置请求中字符的编码格式。</td></tr>
 </table>
 
-## SQL 标签库： 
+## SQL 标签库 
 
 JSTL 的 SQL 标签库提供了标签给交互的关系数据库(RDBMSs)如 Oracle、mySQL 或 Microsoft SQL Server。 
 
@@ -104,7 +104,7 @@ JSTL 的 SQL 标签库提供了标签给交互的关系数据库(RDBMSs)如 Orac
 <tr><td><a href="jsp-tag/sql-transaction.md">&lt;sql:transaction &gt;</a></td><td>为嵌套数据库操作元素提供了一个共享连接，建立执行所有语句组成一个事务。</td></tr>
 </table>
 
-## XML 标签库： 
+## XML 标签库 
 
 JSTL 的 XML 标签库提供了创建和操纵 XML 文档的 JSP-centric 方式。下面是在 JSP 页面中引入 XML 标签库时需要使用的指令： 
 
@@ -138,7 +138,7 @@ JSTL 的 XML 标签库提供了创建和操纵 XML 文档的 JSP-centric 方式�
 <tr><td><a href="jsp-tag/x-param.md">&lt;x:param &gt;</a></td><td>在 XSLT 样式表中使用转换标签设置参数。</td></tr>
 </table>
  
-## JSTL 函数标签库： 
+## JSTL 函数标签库 
 
 JSTL 函数标签库包含了大量的标准函数，其中大多数都是御用字符串处理的函数。下面是在 JSP 页面中引入 JSTL 函数标签库时需要使用的指令：
 

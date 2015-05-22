@@ -1,6 +1,6 @@
-# JSP——客户端请求
+# JSP - 客户端请求
 
-当浏览器请求一个网页时，它向 web 服务器发送大量的信息，信息不能直接阅读，因为这些信息作为 HTTP 请求标题的一部分行进。关于这点你可以查看 [**HTTP Protocol**](http://www.tutorialspoint.com/http/index.htm) 来了解更多的信息。
+当浏览器请求一个网页时，它向 web 服务器发送大量的信息，信息不能直接阅读，因为这些信息作为 HTTP 请求标题的一部分行进。关于这点你可以查看 [**HTTP Protocol**](http://wiki.jikexueyuan.com.com/project/http/) 来了解更多的信息。
 
 以下是来自浏览器端的重要的标题，在网络编程中你将会频繁的使用：
 
@@ -20,7 +20,8 @@
 <tr><td>Referer</td><td>这个标题表示了引用的 Web 页面的 URL。例如，如果你在 Web 页面 1，点击一个链接到 Web 页面 2，当浏览器请求 Web 页面 2 时，web 页面 1 的 URL 是包含在引用标题中的。</td></tr>
 <tr><td>User-Agent</td><td>这个标题标识浏览器或其他做出请求的客户，对应不同类型的浏览器可以返回不同的内容。</td></tr>
 </table> 
-## HttpServletRequest 对象：
+
+## HttpServletRequest 对象
 
 该请求对象是 javax.servlet.http. HttpServletRequest 对象的一个实例。每次客户端请求一个页面时，JSP 引擎就会创建一个新的对象来表示这个请求。
 
@@ -90,7 +91,8 @@
 <tr><td>30</td><td><p><b>int getServerPort()</b></p>
 <p>返回收到这个请求的端口号。</p></td></tr>
 </table> 
-## HTTP 标题请求实例：
+
+## HTTP 标题请求实例
 
 下面是使用 HttpServletRequest 的 **getHeaderNames()** 方法读取 HTTP 标题信息的实例。该方法返回一个枚举，包含与当前 HTTP 请求相关的标题信息。
 

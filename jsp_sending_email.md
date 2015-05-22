@@ -1,4 +1,4 @@
-# JSP——发送电子邮件 
+# JSP - 发送电子邮件 
 
 用一个 JSP 页面发送邮件虽然足够简单，但是开始你应该有 **JavaMail API**，而且在你的电脑上安装 **Java Activation Framework (JAF)**。 
 
@@ -8,7 +8,7 @@
 
 下载和解压这些文件，对于所有的应用程序，在新建的顶层目录中你将可以发现许多 jar 文件。你需要在 CLASSPATH 中添加 **mail.jar** 和 **activation.jar** 文件。 
 
-## 发送一个简单的电子邮件： 
+## 发送一个简单的电子邮件
 
 给出一个简单的例子，从你的机器上发送一个简单的邮件。假设你的**本地主机**连接到互联网，能够足以发送一封电子邮件。同时确保所有 jar 文件从 Java Email API 包到 JAF 包在 CLASSPATH 都是可用的。
 
@@ -96,7 +96,7 @@ throws MessagingException
 
 - **addresses:** 它是邮箱 ID 的数组。你能使用 InternetAddress() 方法，同时指定邮箱 IDs。
 
-## 发送 HTML 邮件： 
+## 发送 HTML 邮件
 
 给出一个简单的例子，从你的机器上发送一个网页邮件。假设你的**本地主机**连接到互联网，能够足以发送一封电子邮件。同时确保所有 jar 文件从 Java Email API 包到 JAF 包在 CLASSPATH 都是可用的。 
 
@@ -275,7 +275,7 @@ props.setProperty("mail.user", "myuser");
 
 邮件发送机制的设置和上述的解释一致。 
 
-## 用表单发送邮件： 
+## 用表单发送邮件 
 
 你可以使用网页表单接受邮件参数，然后你可以使用 request 对象获得如下的所有信息：
 

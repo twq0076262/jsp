@@ -1,4 +1,4 @@
-# JSP——异常处理 
+# JSP - 异常处理 
 
 当你写 JSP 代码的时候，程序员有可能会留下一个编码错误，并且它会出现在代码的任何一个部分。在你的 JSP 代码中你会有以下类型的错误： 
 
@@ -10,7 +10,7 @@
 
 本教程将会对你的 JSP 代码，给你一些简单而又优雅的处理运行异常和错误的方法。
 
-## 使用异常对象：
+## 使用异常对象
 
 异常对象是 Throwable 子类的一个实例（例如，java.lang.NullPointerException），它只能在错误页面是可用的。下面是 Throwable 类中可用的重要方法的列表。 
 
@@ -88,7 +88,7 @@ Sorry, an error occurred.
 Here is the exception stack trace:
 ```
 
-## 在错误页面使用 JSTL 标签： 
+## 在错误页面使用 JSTL 标签
 
 你可以使用 JSTL 标签来编写一个错误页面 ShowError.jsp。这个页面和上面的例子中几乎使用的是相同的逻辑，但是它有更好的结构，并且他提供了更多的信息：
 
@@ -159,7 +159,7 @@ Here is the exception stack trace:
 </table>
 </pre>
 
-## 使用 Try...Catch 块： 
+## 使用 Try...Catch 块
 
 如果你想要在同一个页面中处理错误，使用一些动作而不是释放一个错误页面，那么你可以利用 Try...catch 块。
 

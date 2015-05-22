@@ -1,4 +1,4 @@
-# JSP——Http 状态码
+# JSP - HTTP 状态码
 
 HTTP 请求格式和 HTTP 响应消息的格式一样，都有以下结构：
 
@@ -12,7 +12,7 @@ HTTP 请求格式和 HTTP 响应消息的格式一样，都有以下结构：
 
 例如,一个服务器响应标题看起来如下所示：
 
-<pre class="prettyprint notranslate">
+<pre>
 HTTP/1.1 200 OK
 Content-Type: text/html
 Header2: ...
@@ -247,6 +247,4 @@ HeaderN: ...
 <h3 style="font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;">Apache Tomcat/5.5.29</h3>
 </pre>
  
-
-
 想要使用 HTTP 状态代码变得更加舒适，尝试设置不同的状态代码和描述。

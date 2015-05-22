@@ -1,4 +1,4 @@
-# JSP——Cookies 处理
+# JSP - Cookies 处理
 
 Cookies 是存储在客户端计算机的文本文件，保存各种跟踪目标的信息。JSP 使用底层 servlet 技术透明地支持 HTTP cookies。
 
@@ -12,7 +12,7 @@ Cookies 是存储在客户端计算机的文本文件，保存各种跟踪目标
 
 本章将教你如何设置或重置 cookies，如何访问它们，以及如何使用 JSP 程序删除它们。
 
-## Cookie 的剖析：
+## Cookie 的剖析
 
 Cookie 通常设置在一个 HTTP 标题中(尽管 JavaScript 也可以在浏览器中直接设置cookie)。设置 cookie 的 JSP可能发送如下所示的标题信息：
 
@@ -43,7 +43,7 @@ Accept-Charset: iso-8859-1,*,utf-8
 Cookie: name=xyz
 ```
 
-## Servlet Cookies 方法：
+## Servlet Cookies 方法
 
 下面是与 Cookie 对象关联的有用的方法列表，你可以在 JSP 中操作 cookies 时使用：
 
@@ -76,7 +76,7 @@ Cookie: name=xyz
 <p>该方法返回描述 cookie 目的的评论，如果 cookie 没有评论，那么返回 null。</p></td></tr>
 </table>
 
-## 用 JSP 设置 Cookies：
+## 用 JSP 设置 Cookies
 
 用 JSP 设置 Cookies 包括三个步骤：
 
@@ -106,7 +106,7 @@ response.addCookie(cookie);
 
 ## 示例：
 
-让我们修改 [表单示例]( http://www.tutorialspoint.com/jsp/jsp-form-processing.htm/) 为名称设置 cookies。
+让我们修改 [表单示例](form-processing.md) 为名称设置 cookies。
 
 <pre class="prettyprint notranslate">
 &lt;%
@@ -176,11 +176,11 @@ Last Name: <input type="text" name="last_name" />
 
 下一节将解释如何在你的web应用程序中访问这些 cookies。
 
-## 用JSP 读取 Cookies
+## 用 JSP 读取 Cookies
 
 想要读取 cookie，你需要通过调用 HttpServletRequest 的 getCookies() 方法创建一个 *javax.servlet.http* 数组。然后通过数组循环，使用 getName() 和 getValue() 方法来访问每个 cookie 和相关的值。
 
-## 示例：
+## 示例
 
 让我们读取之前例子中设置的 cookies：
 
@@ -234,7 +234,7 @@ Last Name: <input type="text" name="last_name" />
 
 - 将这个 cookie 添加到响应标题中。
 
-## 示例：
+## 示例
 
 以下的例子中删除了现存的命名为“first_name”的 cookie，当你下次运行 main.jsp JSP时，first_name 会返回空值。
 

@@ -1,7 +1,7 @@
-# JSP——有用的资源 
-
+# JSP - 有用的资源 
 
 ## 关于 JSP 的有用链接
+
 - [Sun's Site on JSP](http://java.sun.com/products/jsp/)  ——Sun 官方网址给出的 JSP 资料链接。 
 
 - [JSP Engine - Tomcat](http://tomcat.apache.org/) ——Apache Tomcat 是一个实现 Java Servlet 和 JSP 技术的开源软件。

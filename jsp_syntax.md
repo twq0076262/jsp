@@ -1,8 +1,8 @@
-# JSP——语法
+# JSP - 语法
 
-本教程将给出涉及 JS P开发的语法的基本思想(即元素)：
+本教程将给出涉及 JS P开发的语法的基本思想(即元素)。
 
-## Scriptlet：
+## Scriptlet
 
 scriptlet 可以包含任意数量的 JAVA 语言语句，变量或方法声明，或者在页面的脚本语言中有效的表达式。
 
@@ -34,14 +34,14 @@ out.println("Your IP address is " + request.getRemoteAddr());
 &lt;/html&gt;
 </pre>
 
-
 **注：** 假设 Apache Tomca t安装在 C:\ apache-tomcat-7.0.2 中，并且你的环境是按照教程中的环境设置配置的。
 
 让我们把上面的代码写入 JSP 文件中的 hello.jsp 中，并把这个文件放在 **C:\ apache-tomcat-7.0.2 \ webapps \ROOT** 中，并试图通过 http://localhost:8080 / hello.jsp 浏览它。这将产生以下结果：
 
 ![syntax1](images/syntax1.jpg)
 
-## JSP 声明:
+## JSP 声明
+
 JSP 声明声明了一个或多个变量或方法，你可以在 JSP 文件中的 Java 代码中使用。当你在 JSP 文件中使用变量或方法之前，你必须声明。
 
 下面是 JSP 声明的语法：
@@ -66,7 +66,7 @@ JSP 声明声明了一个或多个变量或方法，你可以在 JSP 文件中�
 <%! Circle a = new Circle(2.0); %> 
 ```
 
-## JSP 表达式：
+## JSP 表达式
 
 JSP 表达式元素包含一个脚本语言表达式，该表达式被赋值，转换成一个字符串，并插入到表达式出现在 JSP 文件中的位置。
 
@@ -92,7 +92,7 @@ JSP 表达式元素包含一个脚本语言表达式，该表达式被赋值，�
 以下是 JSP 表达式的简单的例子：
 
  
-<pre class="prettyprint notranslate tryit">
+<pre>
 &lt;html&gt; 
 &lt;head&gt;&lt;title&gt;A Comment Test&lt;/title&gt;&lt;/head&gt; 
 &lt;body&gt;
@@ -103,16 +103,14 @@ JSP 表达式元素包含一个脚本语言表达式，该表达式被赋值，�
 &lt;/html&gt; 
 </pre>
 
-
-
 这会生成如下所示结果：
 
-<pre class="result notranslate">
-<p> Today's date: 11-Sep-2010 21:24:25 </p>
-</pre>
+```
+Today's date: 11-Sep-2010 21:24:25
+```
 
 
-## JSP 注释：
+## JSP 注释
 
 JSP 注释标志着 JSP 容器应该忽略的文本或语句。当你想要隐藏或“注释掉”JSP 页面的一部分时，JSP 注释非常有用。
 
@@ -124,7 +122,7 @@ JSP 注释标志着 JSP 容器应该忽略的文本或语句。当你想要隐�
 
 以下是 JSP 注释的简单的例子：
 
-<pre class="prettyprint notranslate tryit">
+<pre>
 &lt;html&gt; 
 &lt;head&gt;&lt;title&gt;A Comment Test&lt;/title&gt;&lt;/head&gt; 
 &lt;body&gt; 
@@ -137,7 +135,7 @@ JSP 注释标志着 JSP 容器应该忽略的文本或语句。当你想要隐�
 
 这将生成如下所示的结果：
 
-<pre class="result notranslate">
+<pre>
 <h2>A Test of Comments</h2>  
 </pre>
 
@@ -154,7 +152,7 @@ JSP 注释标志着 JSP 容器应该忽略的文本或语句。当你想要隐�
 <tr><td>\"</td><td>双引号属性，使用双引号。</td></tr>
 </table>  
 
-## JSP 指令：
+## JSP 指令
 
 JSP 指令影响 servlet 类的总体结构。它通常具有以下形式：
 
@@ -171,9 +169,9 @@ JSP 指令影响 servlet 类的总体结构。它通常具有以下形式：
 <tr><td>&lt;%@ taglib ... %&gt;</td><td>声明一个在页面中使用的标签库，包含自定义操作。</td></tr>
 </table> 
 
-我们会在独立的章节 [**JSP – Directives**]( http://www.tutorialspoint.com/jsp/jsp_directives.htm) 中解释 JSP 指令。
+我们会在独立的章节 [**JSP – Directives**](directives.htm) 中解释 JSP 指令。
 
-## JSP 操作：
+## JSP 操作
 
 JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以动态地插入一个文件，重用 javabean 组件，将用户转到另一个页面，或为 Java 插件生成 HTML。
 
@@ -198,9 +196,10 @@ JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以�
 <tr><td>jsp:body</td><td>定义了动态定义 XM L元素的 body </td></tr>
 <tr><td>jsp:text</td><td>用于在 JSP 页面和文档中编写模板</td></tr>
 </table> 
-我们将在单独的章节 [**JSP – Actions**](http://www.tutorialspoint.com/jsp/jsp_actions.htm) 中解释 JSP 操作。
 
-## JSP 隐式对象：
+我们将在单独的章节 [**JSP – Actions**](actions.htm) 中解释 JSP 操作。
+
+## JSP 隐式对象
 
 JSP 支持 9 个自动定义的变量，这也称为隐式对象。这些变量是：
 
@@ -217,13 +216,13 @@ JSP 支持 9 个自动定义的变量，这也称为隐式对象。这些变量�
 <tr><td>Exception</td><td> <b>Exception</b>对象允许指定的 JSP 访问异常数据。</td></tr>
 </table> 
 
-我们将在独立的章节 [**JSP - Implicit Objects**](http://www.tutorialspoint.com/jsp/jsp_implicit_objects.htm) 中解释 JSP 隐式对象。
+我们将在独立的章节 [**JSP - Implicit Objects**](implicit_objects.htm) 中解释 JSP 隐式对象。
 
-## 控制流语句：
+## 控制流语句
 
 JSP 提供了强有力的 Java 工具来嵌入到你的 web 应用程序中。你可以在 JSP 编程中使用所有的 API 和 Jave 构建块，包括决策语句、循环等。
 
-## 决策的语句：
+## 决策的语句
 
 **if…else** 块像普通的 Scriptlet 一样开始，但 Scriptlet 结束于包含在 Scriptlet 标签间的 HTML 文本每一行。
 
@@ -244,14 +243,13 @@ JSP 提供了强有力的 Java 工具来嵌入到你的 web 应用程序中。�
 
 这将产生如下所示的结果：
 
-<pre class="result notranslate">
-<p> Today is not weekend</p>
-</pre>
-
+```
+Today is not weekend
+```
 
 现在看看下面的 **switch…case** 块，使用 out.println()语句和内部 Scriptletas 编写，与上述例子有一点区别：
 
-<pre class="prettyprint notranslate tryit">
+<pre>
 &lt;%! int day = 3; %&gt; 
 &lt;html&gt; 
 &lt;head&gt;&lt;title&gt;SWITCH...CASE Example&lt;/title&gt;&lt;/head&gt; 
@@ -287,18 +285,18 @@ default:
 
 这将产生如下所示的结果：
 
-<pre class="result notranslate">
-<p>It's Wednesday.</p>
-</pre>
+```
+It's Wednesday.
+```
 
-## 循环语句：
+## 循环语句
 
 你还可以在 Java 中使用循环块的三种基本类型来实现 JSP 编程：**for，while，和 do…while**
 
 让我们看看下面的 **for** 循环的例子：
 
  
-<pre class="prettyprint notranslate tryit">
+<pre>
 &lt;%! int fontSize; %&gt; 
 &lt;html&gt; 
 &lt;head&gt;&lt;title&gt;FOR LOOP Example&lt;/title&gt;&lt;/head&gt; 
@@ -317,7 +315,7 @@ default:
 这将产生如下所示的结果：
 
  
-<pre class="result notranslate">
+<pre>
    <font color="green" size="1">
     JSP Tutorial
    </font><br />
@@ -333,7 +331,7 @@ default:
  
 上述例子也可以用 **while** 循环来编写：
 
-<pre class="prettyprint notranslate tryit">
+<pre>
 &lt;%! int fontSize; %&gt; 
 &lt;html&gt; 
 &lt;head&gt;&lt;title&gt;WHILE LOOP Example&lt;/title&gt;&lt;/head&gt; 
@@ -366,7 +364,7 @@ default:
 </pre>
 
 
-## JSP 运算符：
+## JSP 运算符
 
 JSP 支持所有 Java 支持的逻辑和算术运算符。下表列出了所有运算符的优先级，从上到下，优先级依次降低。
 
@@ -393,7 +391,7 @@ JSP 支持所有 Java 支持的逻辑和算术运算符。下表列出了所有�
 &gt;&gt;=  &lt;&lt;=  &amp;=  ^=   |=&nbsp;</td> <td>从右到左&nbsp;</td>
 </tr> <tr> <td>逗号运算符&nbsp;</td> <td>,&nbsp;</td> <td>从左到右 &nbsp;</td> </tr> </table> 
  
-## JSP 文字：
+## JSP 文字
 
 JSP 表达式语言定义了以下文字：
 

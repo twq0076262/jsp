@@ -1,4 +1,4 @@
-# JSP——隐式对象
+# JSP - 隐式对象
 
 JSP 隐式对象是 Java 对象，JSP 容器使隐式对象在每一个页面中对开发人员是可用的，开发人员可以直接调用它们而不用显式声明。JSP 隐式对象也称为预定义的变量。
 
@@ -17,21 +17,21 @@ JSP 支持九个隐式对象，如下所示：
 <tr><td>Exception</td><td> <b>Exception</b> 对象允许指定的 JSP 访问异常数据。</td></tr>
 </table>
 
-## request 对象：
+## request 对象
 
 request 对象是 javax.servlet.http.HttpServletRequest 对象的一个实例。每次客户端请求一个页面时，JSP 引擎都会创建一个新的对象来表示那个请求。
 
 Request 对象提供方法来获取 HTTP 头信息，包括表单数据，cookies，HTTP 方法等。
 
-我们将会在接下来的章节中看到与 request 对象相关的完整的方法集合：[**JSP - Client Request**](http://www.tutorialspoint.com/jsp/jsp_client_request.htm)
+我们将会在接下来的章节中看到与 request 对象相关的完整的方法集合：[**JSP - Client Request**](client_request.htm)
 
-## response 对象：
+## response 对象
 
 Response 对象是 javax.servlet.http.HttpServletResponse 对象的一个实例。当服务器创建 request 对象时，它也创建了代表客户端响应的对象。
 
 Response 对象还定义了接口，可以处理创建的新的 HTTP 头。通过这个对象 JSP 程序员可以添加新的 cookies 或日期 stamps，HTTP 状态码等。
 
-我们将会在接下来的章节中看到与 response 对象相关的完整的方法集合：[**JSP - Server Response**](http://www.tutorialspoint.com/jsp/jsp_server_response.htm)
+我们将会在接下来的章节中看到与 response 对象相关的完整的方法集合：[**JSP - Server Response**](server_response.htm)
 
 ## out 对象
 
@@ -50,11 +50,11 @@ JspWriter 对象包含大部分与 java.io.PrintWriter 类相同的方法。然�
 <tr><td><b>out.flush()</b></td><td> 刷新数据流。</td></tr>
 </table>  
 
-## session 对象：
+## session 对象
 
 Session 对象是 javax.servlet.http.HttpSession 的一个实例，且行为与 Java servlet 中的 session 对象完全相同。
 
-Session 对象是用来跟踪客户端请求之间的客户端会话。我们将在后续的章节中看到完整的使用 session 对象的方法：[**JSP - Session Tracking**](http://www.tutorialspoint.com/jsp/jsp_session_tracking.htm)
+Session 对象是用来跟踪客户端请求之间的客户端会话。我们将在后续的章节中看到完整的使用 session 对象的方法：[**JSP - Session Tracking**](session_tracking.htm)
 
 ## application 对象
 
@@ -64,7 +64,7 @@ Application 对象是用于生成的 Servlet 的 ServletContext 对象的直接�
 
 通过为 application 添加属性，你可以确保生成 web 应用程序的所有 JSP 文件可以访问它。
 
-你可以在 [**JSP - Hits Counter**](http://www.tutorialspoint.com/jsp/jsp_hits_counter.htm) 章节中查看简单的使用 Application 对象的例子。
+你可以在 [**JSP - Hits Counter**](hits_counter.htm) 章节中查看简单的使用 Application 对象的例子。
 
 ## Config 对象
 
@@ -80,7 +80,7 @@ config.getServletName();
 
 这返回 servlet 的名称，该名称是包含在定义在 web - inf \ web.xml 文件中< servlet-name >元素中的字符串。
 
-## pageContext 对象：
+## pageContext 对象
 
 PageContext 对象是 javax.servlet.jsp.PageContext 对象的一个实例。pageContext 对象用于表示整个 JSP 页面。
 
@@ -98,16 +98,16 @@ PageContext 类定义了几个领域，包括 PAGE_SCOPE ，REQUEST_SCOPE，SESS
 pageContext.removeAttribute("attrName", PAGE_SCOPE);
 ```
 
-你可以在后续的章节中查看使用 pageContext 的例子：[**JSP - File Uploading**](http://www.tutorialspoint.com/jsp/jsp_file_uploading.htm)。
+你可以在后续的章节中查看使用 pageContext 的例子：[**JSP - File Uploading**](file_uploading.htm)。
 
-## Page 对象：
+## Page 对象
 
 这个对象是一个页面实例的真实引用。它可以被认为是一个对象，代表了整个 JSP 页面。
 
 Page 对象实际上是 **this** 对象的一个直接的同义词。
 
-## exception 对象：
+## exception 对象
 
 Exception 对象是一个包装器，包含来自先前页面的异常抛出。它通常用于为错误条件生成一个适当的响应。
 
-我们将在后续章节中看到完整的使用该对象的例子：[**JSP - Exception Handling**](http://www.tutorialspoint.com/jsp/jsp_exception_handling.htm)。
+我们将在后续章节中看到完整的使用该对象的例子：[**JSP - Exception Handling**](exception_handling.htm)。

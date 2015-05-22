@@ -1,4 +1,4 @@
-# JSP——操作
+# JSP - 操作
 
 JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以动态地插入一个文件，重组 JavaBean 组件，将用户转换到另一个页面，或为 Java 插件生成 HTML。
 
@@ -24,7 +24,7 @@ JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以�
 <tr><td>jsp:text</td><td>用于在 JSP 页面和文档中编写模板</td></tr>
 </table>
 
-## 共同的属性：
+## 共同的属性
 
 对于所有的操作元素来说，有两个属性是共同的：**id** 属性和 **scope** 属性。
 
@@ -32,7 +32,7 @@ JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以�
 
 - **Scope属性：** 这个属性标识了操作元素的生命周期。id 属性和 scope 属性是直接相关的，因为 scope 属性决定了 id 属性相关的对象的生命周期。scope 属性有四个可能值：(a)页面，(b)请求，(c)会话和(d)应用程序。
 
-## < jsp:include >操作
+## `<jsp:include>`操作
 
 此操作允许你将文件插入到将要生成的页面中。语法如下：
 
@@ -49,7 +49,8 @@ JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以�
 <tr><td>page</td><td>要被包含的页面的相对 URL。 </td></tr>
 <tr><td>flush</td><td>布尔属性决定了包含的资源在被包含之前其缓冲区是否刷新。</td></tr>
 </table> 
-## 例子：
+
+## 例子
 
 让我们定义以下两个文件(a)date.jsp 和(b)main.jsp，如下:
 
@@ -60,8 +61,6 @@ JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以�
    Today's date: &lt;%= (new java.util.Date()).toLocaleString()%&gt;
 &lt;/p&gt;
 </pre>
-
-
 
 以下是 main.jsp 文件的内容：
 
@@ -91,7 +90,7 @@ JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以�
 
 
 
-## < jsp:useBean >操作
+## `<jsp:useBean>` 操作
 
 **useBean** 操作具有多种用途。它首先利用 id 和 scope 变量搜索现有对象。如果没有找到一个对象，那么它会试图创建指定的对象。
 
@@ -114,7 +113,7 @@ JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以�
 
 在给出与这些操作有关的有效的例子之前，让我们先讨论一下 **jsp:setProperty** 和 **jsp:getProperty** 操作。
 
-## < jsp:setProperty >操作
+## `<jsp:setProperty>` 操作
 
 **setProperty** 操作设置了 Bean 的属性。在定义该操作之前， Bean 一定已经预定义了。有两种使用 setProperty 操作的基本的方式：
 
@@ -149,7 +148,7 @@ jsp:setProperty 可以出现的第二个背景是在 jsp:useBean 元素内部，
 <tr><td>param</td><td>param 属性是请求参数的名称，该属性会接收该请求参数的值。你不能同时使用值和参数，但是使用其中的一个是允许的。</td></tr>
 </table>  
 
-## < jsp:getProperty >操作
+## `<jsp:getProperty>` 操作
 
 **getProperty** 操作用于检索给定属性的值并将它转换成一个字符串，并最终将它插入到输出中。
 
@@ -169,7 +168,7 @@ getProperty 操作只有两个属性，两者都是必需的，其简单的语�
 <tr><td>property</td><td> property 属性是要被检索的 Bean 属性的名称。</td></tr>
 </table> 
 
-## 例子：
+## 例子
 
 让我们定义一个测试的 bean，在例子中使用如下所示：
 
@@ -227,7 +226,7 @@ Hello JSP...
 </pre>
 
 
-## < jsp:forward>操作
+## `<jsp:forward>` 操作
 
 **forward** 操作终止当前页面的操作并将请求转发给另一个资源，如一个静态页面，另一个 JSP 页面，或 Java Servlet。
 
@@ -244,7 +243,7 @@ Hello JSP...
 <tr><td>page</td><td>应该包括另一个资源的相对 URL，比如静态页面，另一个 JSP 页面，或 Java Servlet。</td></tr>
 </table>  
 
-## 例子：
+## 例子
 
 让我们重用以下两个文件(a)date.jsp (b)main.jsp，如下所示：
 
@@ -283,7 +282,7 @@ Hello JSP...
 </pre>
 
 
-## < jsp:plugin>操作
+## `<jsp:plugin>` 操作
 
 **插件**用于将 Java 组件插入到 JSP 页面中。它决定了浏览器的类型以及需要插入的 < object > 或 < embed > 标签的类型。
 
@@ -306,11 +305,12 @@ Hello JSP...
 
 如果你感兴趣的话，你可以使用applet尝试该操作。一个新元素，< fallback >元素，当组件失败时，可以用来指定一个错误字符串发送给用户。
 
-## < jsp:element>操作
+## `<jsp:element>` 操作
 
-## < jsp:attribute>操作
+## `<jsp:attribute>` 操作
 
-## < jsp:body>操作
+## `<jsp:body>` 操作
+
 < jsp:element >，< jsp:attribute >和< jsp:body >操作是用于动态的定义 XML 元素的。动态这个词是很重要的，因为这意味着 XML 元素可以在请求时生成，而不是在编译时静态生成。
 
 下面是一个简单的例子来动态定义 XML 元素：
@@ -350,7 +350,7 @@ Hello JSP...
 </pre>
 
 
-## < jsp:text >操作
+## `<jsp:text>` 操作
 
 <jsp:text>操作可以用于在 jsp 页面和文档中编写模板文本。以下是该操作的简单的语法：
 

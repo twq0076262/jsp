@@ -1,8 +1,8 @@
-# JSP——服务器响应
+# JSP - 服务器响应
 
 当一个 Web 服务器响应浏览器的 HTTP 请求时，响应通常包括一个状态行，一些响应标题，一个空行和文档。一个典型的响应如下所示：
 
-<pre class="prettyprint notranslate">
+<pre>
 HTTP/1.1 200 OK
 Content-Type: text/html
 Header2: ...
@@ -99,11 +99,11 @@ HeaderN: ...
 <p>为响应设置状态码。 </p></td></tr>
 </table>  
 
-## HTTP 标题响应实例：
+## HTTP 标题响应实例
 
 接下来的例子中将使用 **setIntHeader()**方法设置 **Refresh** 标题来模拟数字时钟：
 
-<pre class="prettyprint notranslate tryit">
+<pre>
 &lt;%@ page import="java.io.*,java.util.*" %&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -136,7 +136,7 @@ HeaderN: ...
 
 现在把上面的代码添加到 main.jsp 并试图访问它。这将在每5秒后显示当前系统时间如下所示。运行 JSP，等着看结果： 
 
-<pre class="result notranslate">
+<pre>
 <center>
 <h2 align="center">Auto Refresh Header Example</h2>
 Current Time is: 9:44:50 PM

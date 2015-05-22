@@ -1,4 +1,4 @@
-# JavaBeans 
+# JSP - JavaBeans 
 
 JavaBean 是在编写 Java 时专门创建的 Java 类，根据 JavaBean API 规范进行编码 
 。
@@ -12,7 +12,7 @@ JavaBean 是在编写 Java 时专门创建的 Java 类，根据 JavaBean API 规
 
 - 它可能有大量“getter”和“setter”方法的属性。
 
-## JavaBean 属性： 
+## JavaBean 属性
 
 JavaBean 属性是一个命名属性，这个属性是用户可以访问的对象。属性可以是任何 Java 数据类型，包括自定义的类。 
 
@@ -27,7 +27,7 @@ JavaBean 属性可以读、写、只读或只写。JavaBean 属性是在 JavaBea
 
 一个只读属性只会有一个 get**PropertyName()** 方法，而一个只写属性将只有一个 set**PropertyName()** 方法。 
 
-## JavaBeans 例子： 
+## JavaBeans 例子
 
 考虑一个带有一些属性的 student 类：
 
@@ -61,7 +61,7 @@ public class StudentsBean implements java.io.Serializable
 }
 ```
 
-## 访问 JavaBeans： 
+## 访问 JavaBeans 
 
 在一个 JSP 页面使用时，**useBean** 操作声明一个对象。一旦声明，bean 成为脚本变量，在使用它的 JSP 页面中，它可以通过脚本元素和其他自定义标签访问。useBean 标签的完整的语法如下：
 
@@ -95,7 +95,7 @@ The date/time is Thu Sep 30 11:18:11 GST 2010
 </pre>
 
 
-## 访问 javabean 属性： 
+## 访问 javabean 属性 
 
 随着 < jsp:useBean…>，你可以使用 < jsp:getProperty / > 操作来访问方法和 < jsp:setProperty / > 操作来访问设置方法。这是完整的语法：
 

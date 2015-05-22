@@ -1,4 +1,4 @@
-# JSP——指令
+# JSP - 指令
 
 JSP 指令为容器提供方向和指导，告诉它如何处理 JSP 过程的某些方面。
 
@@ -21,7 +21,7 @@ JSP 指令影响 servlet 类的总体结构。它通常具有以下形式：
 <tr><td>&lt;%@ taglib ... %&gt;</td><td>声明了一个用于页面中的标签库，包括自定义操作。 </td></tr>
 </table>  
 
-## 页面指令：
+## 页面指令
 
 **页面**指令用于为属于当前 JSP 页面的容器提供指示。你可以在 JSP 页面的任何地方编写页面指令代码。按照惯例，通常在 JSP 页面的顶部编写页面指令代码。
 
@@ -37,7 +37,7 @@ JSP 指令影响 servlet 类的总体结构。它通常具有以下形式：
 <jsp:directive.page attribute="value" />
 ```
 
-## 属性：
+## 属性
 
 以下是页面指令相关的属性列表：
 
@@ -58,9 +58,9 @@ JSP 指令影响 servlet 类的总体结构。它通常具有以下形式：
 <tr><td>isScriptingEnabled</td><td>决定是否允许使用脚本元素。</td></tr>
 </table>  
 
-关于上述属性更详细的描述，请看 [**Page Directive**](http://www.tutorialspoint.com/jsp/page_directive.htm)
+关于上述属性更详细的描述，请看 [**Page Directive**](page_directive.htm)
 
-## 包含指令：
+## 包含指令
 
 **包含**指令用于在转换阶段包含一个文件。这个指令告诉容器在转换阶段将其他外部文件的内容与当前 JSP 合并。你可以在你的 JSP 页面中的任何位置编写 *include* 指令。
 
@@ -78,9 +78,10 @@ JSP 指令影响 servlet 类的总体结构。它通常具有以下形式：
 <jsp:directive.include file="relative url" />
 ```
 
-关于包含指令的更详细的描述，请看 [**Include Directive**](http://www.tutorialspoint.com/jsp/include_directive.htm)
+关于包含指令的更详细的描述，请看 [**Include Directive**](include_directive.htm)
 
-## taglib 指令：
+## taglib 指令
+
 JSP API 允许用户定义自定义的 JSP 标签，看起来像 HTML 或 XML 标签，且标签库是一组用户定义的标签，能够实现自定义的行为。
 
 **taglib** 指令声明了 JSP 页面使用一组自定义标签，识别库的位置，并提供方法来确定 JSP 页面中的自定义标签。
@@ -99,6 +100,6 @@ taglib 指令遵循以下语法：
 <jsp:directive.taglib uri="uri" prefix="prefixOfTag" />
 ```
 
-关于 taglib 指令的更详细的描述，请看 [**Taglib Directive**](http://www.tutorialspoint.com/jsp/taglib_directive.htm)
+关于 taglib 指令的更详细的描述，请看 [**Taglib Directive**](taglib_directive.htm)
 
 

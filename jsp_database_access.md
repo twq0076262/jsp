@@ -1,16 +1,16 @@
-# 访问数据库 
+# JSP - 访问数据库 
 
 该教材假定你已经完全理解了 JDBC 应用程序的工作原理。在通过 JSP 访问数据库之前，确保你的数据库有适合的 JDBC 环境设置。 
 
-对于如何用 JDBC 和环境设置访问数据库的更多细节，你可以阅读我们的 [JDBC Tutorial](http://www.tutorialspoint.com/jdbc/index.htm)。 
+对于如何用 JDBC 和环境设置访问数据库的更多细节，你可以阅读我们的 [JDBC 教程](http://wiki.jikexueyuan.com/project/jdbc/)。 
 
 为了开始基本的概念，我们先创建简单的表和新的记录在该表中，如下所示： 
 
-## 创建表： 
+## 创建表
 
 为了在 EMP 数据库中创建 **Employees** 表，用下面的步骤：
 
-### 步骤1： 
+### 步骤 1
 
 打开一个**命令提示符**并且改变安装路径，如下所示：
 
@@ -20,7 +20,7 @@ C:\>cd Program Files\MySQL\bin
 C:\Program Files\MySQL\bin>
 ```
 
-### 步骤2： 
+### 步骤 2 
 
 登陆数据库，如下所示：
 
@@ -30,7 +30,7 @@ Enter password: ********
 mysql>
 ```
 
-### 步骤3： 
+### 步骤 3 
 
 在 **TEST** 数据库中创建 **Employee** 表，如下所示：
 
@@ -47,7 +47,7 @@ Query OK, 0 rows affected (0.08 sec)
 mysql>
 ```
 
-##创建数据记录： 
+## 创建数据记录
 
 最后你在 Employee 表中创建一些记录，如下所示：
 
@@ -63,7 +63,7 @@ Query OK, 1 row affected (0.00 sec)
 mysql>
 ```
 
-## 查询操作： 
+## 查询操作 
 
 下面的例子显示了我们如何用 JSTL 在 JSP 程序中执行 SQL 查询语句：
 
@@ -144,7 +144,7 @@ SELECT * from Employees;
 </table>
 
 
-## 插入操作： 
+## 插入操作 
 
 下面的例子显示了我们如何用 JSTL 在 JSP 程序中执行 SQL 插入语句：
 
@@ -237,7 +237,7 @@ SELECT * from Employees;
 </table>
 
 
-## 删除操作： 
+## 删除操作
 
 下面的例子显示了我们如何用 JSTL 在 JSP 程序中执行 SQL 删除语句：
 
@@ -320,7 +320,7 @@ SELECT * from Employees;
 </table>
 
 
-## 更新操作： 
+## 更新操作 
 
 下面的例子显示了我们如何用 JSTL 在 JSP 程序中执行 SQL 更新语句：
 

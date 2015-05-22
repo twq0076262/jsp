@@ -1,4 +1,4 @@
-# JSP——过滤器
+# JSP - 过滤器
 
 Servlet 和 JSP 过滤器都是 Java 类，可以在 Servlet 和 JSP 编程中用于以下目的：
 
@@ -32,7 +32,7 @@ Tomcat-installation-directory > \ conf* 目录下找到。
 
 当 JSP 容器启动 web 应用程序时，它会为每个在部署描述符中声明的过滤器创建一个实例。过滤器按照它们在部署描述符中声明的顺序执行。
 
-## Servlet 过滤器方法：
+## Servlet 过滤器方法
 
 一个过滤器是一个简单的 Java 类，实现了 javax.servlet.Filter 接口。javax.servlet.Filter接口定义了三个方法：
 
@@ -45,7 +45,8 @@ Tomcat-installation-directory > \ conf* 目录下找到。
 <tr><td>3</td><td><p><b>public void destroy()</b></p>
 <p>由 web 容器调用此方法，向过滤器表明它将从服务中被去掉。</p></td></tr>
 </table> 
-## JSP 过滤器示例：
+
+## JSP 过滤器示例
 
 下面是 JSP 过滤器的示例，每次访问任何 JSP 文件时都会输出客户端 IP 地址和当前日期时间。这个例子会使你基本了解 JSP 过滤器，但是你可以使用相同的概念编写更复杂的过滤器应用程序：
 

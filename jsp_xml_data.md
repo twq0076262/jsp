@@ -1,8 +1,8 @@
-# XML 数据 
+# JSP - XML 数据 
 
 当你通过 HTTP 发送 XML 数据时，使用 JSP 处理传入和传出的XML文件是有意义的，例如 RSS 文档。作为 XML 文档仅仅是一堆文字，通过 JSP 创建一个 XML 文档并不比创建一个 HTML 文档困难。 
 
-## 从 JSP 发送 XML： 
+## 从 JSP 发送 XML
 
 你可以用 JSPs 发送 HTML 的同样的方式来发送 XML 内容。唯一的区别在于，你必须设置页面的内容类型为 text/xml。使用 < % @page % > 标签来设置内容类型，如下所示：
 
@@ -25,7 +25,7 @@
 
 尝试使用不同的浏览器访问上面的 XML，用来显示上面的 XML 的文档树。 
 
-## 在 JSP 上处理 XML： 
+## 在 JSP 上处理 XML 
  
 在使用 JSP 处理 XML 之前，你需要复制以下两个 XML 和 XPath 相关的库到你的 <Tomcat Installation Directory>\lib 中： 
 
@@ -86,7 +86,7 @@
 </pre>
 
 
-## 格式化 XML 和 JSP： 
+## 格式化 XML 和 JSP 
 
 考虑下面的 XSLT 样式表 style.xsl：
 
@@ -175,4 +175,4 @@
 </pre>
 
 
-关于用 JSTL 处理 XML 更多的细节，你可以查询 [**JSP Standard Tag Library**](http://www.tutorialspoint.com/jsp/jsp_standard_tag_library.htm)。
+关于用 JSTL 处理 XML 更多的细节，你可以查询 [**JSP Standard Tag Library**](standard_tag_library.htm)。

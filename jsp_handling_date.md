@@ -1,4 +1,4 @@
-# 处理日期 
+# JSP - 处理日期 
 
 使用 JSP 的一个最重要的优点是，你可以使用核心 Java 中所有有效的方法。本教程将教你使用 Java 提供的 **Date** 类，它在 **java.util** 包是有效的，这个类封装了当前的日期和时间。 
 
@@ -42,7 +42,7 @@ Date(long millisec)
 </table>
 
 
-## 得到当前日期 & 时间： 
+## 得到当前日期 & 时间
 
 在 JSP 程序中，很容易得到当前日期和时间。你可以使用一个简单的 Date 对象调用 toString() 方法来输出当前的日期和时间，如下所示：
 
@@ -75,7 +75,7 @@ Date(long millisec)
 
 尝试刷新 URL http://localhost:8080/CurrentDate.jsp ，你将会发现每一次刷新都会有几秒钟的区别。 
 
-## 日期比较： 
+## 日期比较
 
 正如上面提到的，你可以使用所有有效的 Java 方法在你的 JavaScript 中。如果你需要比较两个日期，下面是方法： 
 
@@ -85,7 +85,7 @@ Date(long millisec)
 
 - 你可以使用 compareTo() 方法，它由 Comparable 接口定义并且有 Date 实现。
 
-## 用 SimpleDateFormat 实现日期格式化： 
+## 用 SimpleDateFormat 实现日期格式化 
 
 SimpleDateFormat 是用对语言环境敏感的方式来格式化和解析日期的具体类。SimpleDateFormat 允许你对日期时间格式来选择任何用户定义的模式开始。 
 
@@ -121,7 +121,7 @@ SimpleDateFormat 是用对语言环境敏感的方式来格式化和解析日期
 </pre>
 
 
-## Simple DateFormat 格式化代码： 
+## Simple DateFormat 格式化代码
 
 指定时间格式使用一个时间模式字符串。在这个模式中,所有 ASCII 字母被保留为模式字母，它们被定义为如下： 
 

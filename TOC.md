@@ -9,7 +9,7 @@
    - [JSP - 隐式对象](jsp_implicit_objects.md)
    - [JSP - 客户端请求](jsp_client_request.md)
    - [JSP - 服务器响应](jsp_server_response.md)
-   - [JSP - Http 状态代码](jsp_http_status_codes.md)
+   - [JSP - HTTP 状态代码](jsp_http_status_codes.md)
    - [JSP - 表单处理](jsp_form_processing.md)
    - [JSP - 过滤器](jsp_writing_filters.md)
    - [JSP - Cookies 处理](jsp_cookies_handling.md)
@@ -34,6 +34,4 @@
  - JSP 面试问题
    - [JSP - 面试问题](jsp_interview_questions.md)
  - JSP 有用的资源
-   - [JSP - 快速指南](jsp_quick_guide.md)
    - [JSP - 有用的资源](jsp_useful_resources.md)
-   - [JSP - 讨论](jsp_discussion.md)

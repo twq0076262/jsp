@@ -1,8 +1,8 @@
-# 表达式语言（EL） 
+# JSP - 表达式语言
 
 JSP 表达式语言(EL)可以方便地访问存储在 javabean 组件中的应用程序的数据。JSP EL 允许创建表达式**(a)**算术和**(b)**逻辑。在一个 JSP EL 表达式中，你可以使用整数、浮点型数字、字符串、内置的布尔常量值为 true 和 false 和 null。 
 
-## 简单的语法： 
+## 简单的语法 
 
 通常，当你给 JSP 标签指定一个属性值时，你只需使用一个字符串。例如：
 
@@ -54,7 +54,7 @@ EL 表达式可以使用括号组成子表达式。例如，$ {(1 + 2)* 3 } = 9�
  
 这个属性的有效值是 true 和 false。如果它是 true，当它们出现在静态文本或标签属性时，EL 表达式被忽略。如果它是 false，EL 表达式都由容器进行计算。 
 
-## EL 的基本操作： 
+## EL 的基本操作 
 
 JSP 表达式语言(EL)支持大多数 Java 支持的算术和逻辑运算符。下面是最常用的操作符的列表：
 
@@ -80,7 +80,7 @@ JSP 表达式语言(EL)支持大多数 Java 支持的算术和逻辑运算符。
 <tr><td>empty </td><td>空的变量值</tr></td>
 </table>
 	
-## JSP EL 中的函数： 
+## JSP EL 中的函数
 
 JSP EL 同样允许使用函数表达式。这些功能必须定义在自定义标签库中。一个函数利用下面的语法使用：
 
@@ -96,7 +96,7 @@ ${fn:length("Get my length")}
 
 要从(标准或自定义)标签库中使用一个函数，你必须在你的服务器上安装库，而且必须在 JSP 中使用 < taglib > 指令来引用该库，这个在 JSTL 章有解释。 
 
-## JSP EL 隐式对象： 
+## JSP EL 隐式对象 
 
 JSP 表达式语言支持以下隐式对象： 
 
@@ -117,7 +117,7 @@ JSP 表达式语言支持以下隐式对象：
 
 你可以在表达式中使用这些对象，把它们看做是变量。这里有一些明确概念的例子：
 
-## pageContext 对象： 
+## pageContext 对象 
 
 pageContext 对象允许你访问 pageContext JSP 对象。通过 pageContext 对象，你可以访问请求对象。例如，要访问请求传入的查询字符串，你可以使用下面的表达式：
 
@@ -125,13 +125,13 @@ pageContext 对象允许你访问 pageContext JSP 对象。通过 pageContext �
 ${pageContext.request.queryString}
 ```
 
-## Scope 对象： 
+## Scope 对象
 
 sessionScope、pageScope、requestScop、applicationScope 变量在每个级别范围提供变量存储。 
 
 例如，如果你需要显式地在应用范围内访问 box 变量，你可以通过 applicationScope 变量作为 applicationScope.box 来访问。 
 
-## param 和 paramValues 对象： 
+## param 和 paramValues 对象 
 
 param 和 paramValues 对象通常通过 request.getParameter 和 request.getParameterValues 方法来有效的访问参数值。 
 
@@ -161,7 +161,7 @@ param 和 paramValues 对象通常通过 request.getParameter 和 request.getPar
 
 param 对象返回单个字符串值，而 paramValues 对象返回字符串数组。
 
-## header 和 headerValues 对象： 
+## header 和 headerValues 对象 
 
 header 和 headerValue 对象通常通过 request.getHeader 和 request.getHeaders 方法来有效的访问标头值。 
 
