@@ -1,6 +1,6 @@
-# JSP——体系结构
+# JSP - 体系结构
 
-web 服务器需要一个 JSP 引擎，即处理 JSP 页面的容器。JSP 容器负责为 JSP 页面拦截请求。本教程使用了 Apache，Apache 已经内置了 JSP 容器来支持 JSP 页面开发。
+Web 服务器需要一个 JSP 引擎，即处理 JSP 页面的容器。JSP 容器负责为 JSP 页面拦截请求。本教程使用了 Apache，Apache 已经内置了 JSP 容器来支持 JSP 页面开发。
 
 JSP 容器适用于 Web 服务器，来提供 JSP 运行时环境和其他服务的需求。它知道如何理解 JSP 的部分特殊元素。
 
@@ -9,7 +9,7 @@ JSP 容器适用于 Web 服务器，来提供 JSP 运行时环境和其他服务
 
 ![arch1](images/arch1.jpg)
 
-## JSP 处理： 
+## JSP 处理 
 
 下面的步骤解释了 web 服务器如何使用 JSP 创建 web 页面：
 
