@@ -1,4 +1,4 @@
- - Basic JSP Tutorial
+ - JSP 基础教程
    - [JSP - 概述](jsp_overview.md)
    - [JSP - 环境配置](jsp_environment_setup.md)
    - [JSP - 体系结构](jsp_architecture.md)
@@ -20,7 +20,7 @@
    - [JSP - 点击计数器](jsp_hits_counter.md)
    - [JSP - 自动刷新](jsp_auto_refresh.md)
    - [JSP - 发送电子邮件](jsp_sending_email.md)
- - Advanced JSP Tutorials
+ - JSP 高级教程
    - [JSP - 标准标签库](jsp_standard_tag_library.md)
    - [JSP - 访问数据库](jsp_database_access.md)
    - [JSP - XML 数据](jsp_xml_data.md)
@@ -31,9 +31,9 @@
    - [JSP - 调试](jsp_debugging.md)
    - [JSP - 安全性](jsp_security.md)
    - [JSP - 国际化](jsp_internationalization.md)
- - JSP Interview Question
+ - JSP 面试问题
    - [JSP - 面试问题](jsp_interview_questions.md)
- - JSP Useful Resources
+ - JSP 有用的资源
    - [JSP - 快速指南](jsp_quick_guide.md)
    - [JSP - 有用的资源](jsp_useful_resources.md)
    - [JSP - 讨论](jsp_discussion.md)
