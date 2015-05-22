@@ -58,7 +58,7 @@ JSP 指令影响 servlet 类的总体结构。它通常具有以下形式：
 <tr><td>isScriptingEnabled</td><td>决定是否允许使用脚本元素。</td></tr>
 </table>  
 
-关于上述属性更详细的描述，请看 [**Page Directive**](page_directive.htm)
+关于上述属性更详细的描述，请看 [**Page Directive**](page-directive.md)
 
 ## 包含指令
 
@@ -78,7 +78,7 @@ JSP 指令影响 servlet 类的总体结构。它通常具有以下形式：
 <jsp:directive.include file="relative url" />
 ```
 
-关于包含指令的更详细的描述，请看 [**Include Directive**](include_directive.htm)
+关于包含指令的更详细的描述，请看 [**Include Directive**](include-directive.md)
 
 ## taglib 指令
 
@@ -100,6 +100,6 @@ taglib 指令遵循以下语法：
 <jsp:directive.taglib uri="uri" prefix="prefixOfTag" />
 ```
 
-关于 taglib 指令的更详细的描述，请看 [**Taglib Directive**](taglib_directive.htm)
+关于 taglib 指令的更详细的描述，请看 [**Taglib Directive**](taglib-directive.md)
 
 

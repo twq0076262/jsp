@@ -169,7 +169,7 @@ JSP 指令影响 servlet 类的总体结构。它通常具有以下形式：
 <tr><td>&lt;%@ taglib ... %&gt;</td><td>声明一个在页面中使用的标签库，包含自定义操作。</td></tr>
 </table> 
 
-我们会在独立的章节 [**JSP – Directives**](directives.htm) 中解释 JSP 指令。
+我们会在独立的章节 [**JSP – Directives**](directives.md) 中解释 JSP 指令。
 
 ## JSP 操作
 
@@ -197,7 +197,7 @@ JSP 操作使用 XML 语法结构来控制 servlet 引擎的行为。你可以�
 <tr><td>jsp:text</td><td>用于在 JSP 页面和文档中编写模板</td></tr>
 </table> 
 
-我们将在单独的章节 [**JSP – Actions**](actions.htm) 中解释 JSP 操作。
+我们将在单独的章节 [**JSP – Actions**](actions.md) 中解释 JSP 操作。
 
 ## JSP 隐式对象
 
@@ -216,7 +216,7 @@ JSP 支持 9 个自动定义的变量，这也称为隐式对象。这些变量�
 <tr><td>Exception</td><td> <b>Exception</b>对象允许指定的 JSP 访问异常数据。</td></tr>
 </table> 
 
-我们将在独立的章节 [**JSP - Implicit Objects**](implicit_objects.htm) 中解释 JSP 隐式对象。
+我们将在独立的章节 [**JSP - Implicit Objects**](implicit_objects.md) 中解释 JSP 隐式对象。
 
 ## 控制流语句
 
