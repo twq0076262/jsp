@@ -1,7 +1,7 @@
 {
-    "name": "JSP 中文版",
-    "introduction": "Java 服务器页面(JSP)是一种服务器端编程技术，能够为构建基于 web 的应用程序创建动态的独立于平台的方法。JSP 可以访问 Java API 的整个家族，包括访问 enterprise 数据库的 JDBC API。",
-    "title": "JSP 中文版- 极客学院 Wiki",
+    "name": "JSP 教程",
+    "introduction": "JSP 是一种服务器端编程技术，能够为构建基于 Web 的应用程序创建动态的独立于平台的方法。本教程帮助初学者们 Web 了解 JSP 的基本功能，从而开发自己的 Web 应用程序。学完本教程后你会发现自己处于一个使用 JSP 专业知识的中等水平，之后你可以达到更高的水平。",
+    "title": "JSP 教程 - 极客学院 Wiki",
     "keywords": "JSP 中文版,JSP,jsp教程,java服务器页面",
-    "description": "Java 服务器页面(JSP)是一种服务器端编程技术，能够为构建基于 web 的应用程序创建动态的独立于平台的方法。JSP 可以访问 Java API 的整个家族，包括访问 enterprise 数据库的 JDBC API。"
+    "description": "JSP 是一种服务器端编程技术，能够为构建基于 Web 的应用程序创建动态的独立于平台的方法。本教程帮助初学者们 Web 了解 JSP 的基本功能，从而开发自己的 Web 应用程序。学完本教程后你会发现自己处于一个使用 JSP 专业知识的中等水平，之后你可以达到更高的水平。"
 }
