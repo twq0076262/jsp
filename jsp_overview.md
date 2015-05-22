@@ -1,10 +1,10 @@
-# JSP——概述
+# JSP - 概述
 
-## 什么是 Java 服务器页面?
+## 什么是 JavaServer Pages？
 
-Java 服务器页面(JSP)是一种技术，能够开发支持动态内容的网页，可以帮助开发人员在 HTML 页面中利用特殊的 JSP 标签插入 java 代码，其中大部分标签是以<% 开始，以 %>结束的。
+JavaServer Pages(JSP) 是一种技术，能够开发支持动态内容的网页，可以帮助开发人员在 HTML 页面中利用特殊的 JSP 标签插入 Java 代码，其中大部分标签是以 `<%` 开始，以 `%>` 结束的。
 
-JavaServer Pages 组件是 Java servlet 的一种，旨在为 Java web 应用程序实现一个用户界面。Web 开发人员编写 JSP 作为文本文件，结合 HTML 或 XHTML 代码，XML 元素，并嵌入 JSP 操作和命令。
+JavaServer Pages 组件是 Java Servlet 的一种，旨在为 Java web 应用程序实现一个用户界面。Web 开发人员编写 JSP 作为文本文件，结合 HTML 或 XHTML 代码，XML 元素，并嵌入 JSP 操作和命令。
 
 使用 JSP，你可以通过 web 页面的形式收集来自用户的输入，来自数据库或其他资源的当前记录并动态地创建 web 页面。
 
@@ -28,7 +28,7 @@ JavaServer Pages 的服务通常与通用网关接口(CGI)实现程序一样。�
 
 下列是 JSP 优于其他技术的另外的优点：
 
-- **与 Active Server Pages(ASP)相比：** JSP 的优点是双重的。首先，动态的部分是用 Java 编写的，而不是用 Visual Basic 或其他特定的语言编写，所以它使用起来更强大并且更容易。第二，它可以移植到其他操作系统和非 microsoft 的 Web 服务器中。
+- **与 Active Server Pages(ASP) 相比：** JSP 的优点是双重的。首先，动态的部分是用 Java 编写的，而不是用 Visual Basic 或其他特定的语言编写，所以它使用起来更强大并且更容易。第二，它可以移植到其他操作系统和非 microsoft 的 Web 服务器中。
 
 - **与 Pure Servlets 相比：** 与用大量的 println 语句生成 HTML 相比，JSP 能够更方便的写(和修改!)常规的 HTML。
 
@@ -42,4 +42,4 @@ JavaServer Pages 的服务通常与通用网关接口(CGI)实现程序一样。�
 
 我将带你一步一步配置环境来开始 JSP 的学习。我假设你有良好的 Java 编程基础来进行 JSP 的学习。
 
-如果你不知道 Java 编程语言，我建议你通过 [Java 教程]( http://www.tutorialspoint.com/java/index.htm)来了解 Java 编程。
+如果你不知道 Java 编程语言，我建议你通过 [Java 教程]( http://wiki.jikexueyuan.com/project/java/) 来了解 Java 编程。

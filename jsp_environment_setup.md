@@ -1,4 +1,4 @@
-# JSP——环境配置
+# JSP - 环境配置
 
 开发环境是你将开发 JSP 程序、测试程序并最终运行程序的地方。
 
@@ -40,7 +40,7 @@ Apache Tomcat 是 JSP 和 Servlet 技术的一个开源软件实现，可以作�
 
 - 下载安装后，解压二进制发行版到一个方便的位置。例如 windows 系统中的 C:\ apache-tomcat-5.5.29 位置，或在 Linux / Unix 系统中的 /usr/local/apache-tomcat-5.5.29 位置，然后创建 CATALINA_HOME 环境变量来指向这些位置。
 
-在 windows 系统的计算机中，可以通过执行以下命令来启动 Tomcat：
+在 Windows 系统的计算机中，可以通过执行以下命令来启动 Tomcat：
 
 ``` 
 %CATALINA_HOME%\bin\startup.bat 
@@ -70,7 +70,7 @@ $CATALINA_HOME/bin/startup.sh
 
 关于配置和运行 Tomcat 的更多信息可以在这里的文档中找到，也可以在 Tomcat 网站中找到：http://tomcat.apache.org
 
-在 windows 系统的计算机中，可以通过执行以下命令来结束 Tomcat：
+在 Windows 系统的计算机中，可以通过执行以下命令来结束 Tomcat：
 
 ``` 
 %CATALINA_HOME%\bin\shutdown
